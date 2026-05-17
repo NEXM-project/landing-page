@@ -1,0 +1,8 @@
+{
+  "homepage": {
+    "herobanner": {
+      "heading": "Welcome to our application!",
+      "description": "This is a sample application to demonstrate internationalization (i18n) features. Change the language settings to see how the content adapts to different locales."
+    }
+  }
+}
