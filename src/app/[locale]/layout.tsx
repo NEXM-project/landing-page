@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
-const roboto = Roboto_Mono({
+const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -28,11 +29,12 @@ export default async function RootLayout({ children, params }: LayoutProps) {
     notFound();
   }
   return (
-    <html lang="en" className={`${roboto.className} h-full antialiased`}>
+    <html lang="en" className={`${poppins.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main className="flex-1">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

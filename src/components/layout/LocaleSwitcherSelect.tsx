@@ -14,10 +14,10 @@ interface LocaleSwitcherSelectProps {
   label: string;
 }
 
-export default function LocaleSwitcherSelect({
+export const LocaleSwitcherSelect = ({
   defaultValue,
   label,
-}: LocaleSwitcherSelectProps) {
+}: LocaleSwitcherSelectProps) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -28,7 +28,7 @@ export default function LocaleSwitcherSelect({
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
       <SelectTrigger
-        className={`w-18 p-0 md:p-4 text-sm font-medium transition duration-300 border-none bg-transparent shadow-none cursor-pointer focus:ring-0 `}
+        className={`w-full lg:w-18 md:p-4 text-sm font-medium transition duration-300 md:border lg:border-none bg-transparent shadow-none cursor-pointer focus:ring-0 `}
         aria-label={label}
       >
         <SelectValue />
@@ -42,4 +42,4 @@ export default function LocaleSwitcherSelect({
       </SelectContent>
     </Select>
   );
-}
+};

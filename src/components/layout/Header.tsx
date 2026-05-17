@@ -1,6 +1,6 @@
 "use client";
 
-import LocaleSwitcherSelect from "@/components/layout/LocaleSwitcherSelect";
+import { LocaleSwitcherSelect } from "@/components/layout/LocaleSwitcherSelect";
 import {
   Sheet,
   SheetContent,
@@ -14,9 +14,9 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navigationLinks = [
-  { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/about-us", label: "About Us" },
+  { href: "#", label: "Services" },
+  { href: "#", label: "Portfolio" },
+  { href: "#", label: "About Us" },
   { href: "#", label: "Insights" },
 ];
 
@@ -28,27 +28,25 @@ export const Header = () => {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4 sm:px-20 md:px-30">
-      <div className="backdrop-blue-md bg-white  border border-black/90 rounded-lg px-8 sm:px-10 md:px-12 py-4 flex items-center justify-between  gap-4">
-        <Link href={"/"} className="shrink-0">
-          <div className="flex gap-2 items-center">
-            <Hexagon className="fill-purple-500 text-white" />
-            <Link href="/" className="font-medium ">
-              NexM
-            </Link>
-          </div>
-        </Link>
+    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-7xl px-4 sm:px-20 md:px-30">
+      <div className="backdrop-blue-md bg-white  border border-black/20 rounded-lg px-8 sm:px-10 md:px-12 py-4 flex items-center justify-between  gap-4">
+        <div className="flex gap-2 items-center">
+          <Hexagon className="fill-primary text-white" />
+          <Link href="/" className="font-semibold text-2xl">
+            NexM
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex ">
+        <div className="hidden lg:flex gap-6">
           {navigationLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
               className={`text-black py-1 mx-2 font-medium transition-all duration-300 cursor-pointer border-b-2 ${
                 isActive(link.href)
-                  ? "border-b-black"
-                  : "border-b-transparent hover:border-b-black duration-700"
+                  ? "border-b-primary"
+                  : "hover:text-primary border-b-transparent hover:border-b-primary duration-700"
               }`}
             >
               {link.label}
@@ -57,8 +55,10 @@ export const Header = () => {
         </div>
 
         {/* Locale Switcher */}
-        <div className="hidden lg:flex">
-          <button className="">Get a quote</button>
+        <div className="hidden lg:flex items-center">
+          <button className="p-2 bg-primary text-white  rounded-sm">
+            Get a quote
+          </button>
           <LocaleSwitcherSelect defaultValue={locale} label="Change language" />
         </div>
 
@@ -70,27 +70,32 @@ export const Header = () => {
           <SheetTitle className="sr-only"></SheetTitle>
           <SheetContent
             side="right"
-            className="bg-white/60 border-l border-white/20 p-4"
+            className="bg-white/80 border-l border-white/20 p-4"
           >
             <div className="flex flex-col gap-6 mt-8 ">
               {navigationLinks.map((link) => (
                 <Link
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className={`text-black font-medium transition-all duration-300 cursor-pointer border-b-2 pb-2 ${
                     isActive(link.href)
-                      ? "border-b-black"
+                      ? "border-b-primary"
                       : "border-b-transparent"
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <LocaleSwitcherSelect
-                defaultValue={locale}
-                label="Change language"
-              />
+              <div className="lg:hidden flex flex-col gap-4 ">
+                <button className="p-2 bg-primary text-white  rounded-sm">
+                  Get a quote
+                </button>
+                <LocaleSwitcherSelect
+                  defaultValue={locale}
+                  label="Change language"
+                />
+              </div>
             </div>
           </SheetContent>
         </Sheet>
