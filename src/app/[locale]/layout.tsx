@@ -30,7 +30,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
   }
   return (
     <html lang="en" className={`${poppins.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full">
         <NextIntlClientProvider>
           <Header />
           <main className="flex-1">{children}</main>
