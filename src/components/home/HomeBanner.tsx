@@ -4,7 +4,7 @@ import Link from "next/link";
 export const HomeBanner = () => {
   return (
     <>
-      <div className="md:max-w-7xl w-full mx-auto px-4 lg:px-0 lg:mx-20 xl:mx-auto min-h-[90vh] mt-40">
+      <div className="md:max-w-7xl w-full mx-auto px-4 lg:px-0 lg:mx-20 xl:mx-auto min-h-[60vh] mt-40">
         <p className="max-w-60 mx-auto text-center bg-primary text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
           ENTERPRISE AI SOLUTIONS
         </p>
