@@ -25,7 +25,7 @@ const imageLogos = [
 export const FeaturedProjects = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto lg:mx-20 xl:mx-auto px-4 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-10 lg:py-20">
         <p className="text-center text-sm md:text-base text-primary">
           DELIVERING EXCELLENCE ACROSS INDUSTRIES.
         </p>

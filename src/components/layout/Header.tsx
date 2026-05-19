@@ -28,7 +28,7 @@ export const Header = () => {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:max-w-7xl px-4 sm:px-20 md:px-30">
+    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:max-w-7xl px-4 sm:px-20 md:px-24 ">
       <div className="backdrop-blue-md bg-white border border-black/20 rounded-lg px-8 sm:px-10 md:px-12 py-4 flex items-center justify-between gap-4">
         <div className="flex gap-2 items-center">
           <Hexagon className="fill-primary text-white" />
@@ -55,7 +55,7 @@ export const Header = () => {
         </div>
 
         {/* Locale Switcher */}
-        <div className="hidden lg:flex items-center">
+        <div className="hidden lg:flex items-center gap-2">
           <button className="p-2 bg-primary text-white  rounded-sm">
             Get a quote
           </button>
