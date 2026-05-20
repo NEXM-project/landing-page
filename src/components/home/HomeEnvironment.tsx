@@ -23,7 +23,7 @@ const cardsData = [
   },
 ];
 
-export const HomeEnviroment = () => {
+export const HomeEnvironment = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const countersRef = useRef<(HTMLDivElement | null)[]>([]);
   const hasAnimated = useRef(false);
