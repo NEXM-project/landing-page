@@ -25,11 +25,11 @@ const imageLogos = [
 export const FeaturedProjects = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 py-10 lg:py-20">
-        <p className="text-center text-sm md:text-base text-primary">
+      <div className=" px-4 py-10 lg:py-30">
+        <p className=" max-w-7xl mx-auto text-center text-sm md:text-base text-primary">
           DELIVERING EXCELLENCE ACROSS INDUSTRIES.
         </p>
-        <h2 className="text-3xl lg:text-5xl font-semibold mb-6 text-center pt-4">
+        <h2 className="max-w-7xl mx-auto text-3xl lg:text-5xl font-semibold mb-6 text-center pt-4">
           Featured Client Projects
         </h2>
         <div className="pt-4 lg:pt-8">

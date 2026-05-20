@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Tanvir Hasan Serazy",
+    "image": "/images/our-team/serazy.png",
+    "alt": "Tanvir Hasan Serazy",
+    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
+    "techStacks": [
+      {
+        "src": "/images/tech-stack/react.png"
+      },
+      {
+        "src": "/images/tech-stack/nextjs.png"
+      },
+      {
+        "src": "/images/tech-stack/typescript.png"
+      },
+      {
+        "src": "/images/tech-stack/tailwind.png"
+      },
+      {
+        "src": "/images/tech-stack/shadcnui.png"
+      },
+      {
+        "src": "/images/tech-stack/zustand.png"
+      }
+    ]
+  },
+  {
+    "name": "Mahedi Hasan Rafin",
+    "image": "/images/our-team/rafin.jpg",
+    "alt": "Mahedi Hasan Rafin",
+    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
+    "techStacks": [
+      {
+        "src": "/images/tech-stack/python.png"
+      },
+      {
+        "src": "/images/tech-stack/django.png"
+      },
+      {
+        "src": "/images/tech-stack/postgresql.png"
+      },
+      {
+        "src": "/images/tech-stack/github.png"
+      },
+      {
+        "src": "/images/tech-stack/aws.png"
+      },
+      {
+        "src": "/images/tech-stack/redis.png"
+      }
+    ]
+  },
+  {
+    "name": "Md. Yeasin Biplob",
+    "image": "/images/our-team/yeasin.png",
+    "alt": "Md. Yeasin Biplob",
+    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
+    "techStacks": [
+      {
+        "src": "/images/tech-stack/react.png"
+      },
+      {
+        "src": "/images/tech-stack/nextjs.png"
+      },
+      {
+        "src": "/images/tech-stack/typescript.png"
+      },
+      {
+        "src": "/images/tech-stack/tailwind.png"
+      },
+      {
+        "src": "/images/tech-stack/shadcnui.png"
+      },
+      {
+        "src": "/images/tech-stack/zustand.png"
+      }
+    ]
+  }
+]

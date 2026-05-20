@@ -3,7 +3,7 @@ import { HomeContactUsForm } from "./HomeContactUsForm";
 
 export const HomeContactUs = () => {
   return (
-    <div className="max-w-7xl mx-auto py-10 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16 px-4">
+    <div className="max-w-7xl mx-auto py-10 lg:py-30 flex flex-col lg:flex-row gap-8 lg:gap-16 px-4">
       {/* Contact Information */}
       <div className="max-w-md">
         <p className="text-primary lg:text-xl font-semibold">
