@@ -123,10 +123,10 @@
   }
   html {
     @apply font-sans;
+    overflow-x: hidden;
   }
   body {
     @apply bg-background text-foreground;
-    width: 100vw;
     overflow-x: hidden;
   }
 }
