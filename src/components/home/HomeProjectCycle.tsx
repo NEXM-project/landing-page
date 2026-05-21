@@ -1,6 +1,12 @@
 import { fallbackImage } from "@/utils/secrets";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
-import { Briefcase, FolderClosed, User } from "lucide-react";
+import {
+  FolderClosed,
+  Handshake,
+  Package,
+  RefreshCcw,
+  User,
+} from "lucide-react";
 
 export const HomeProjectCycle = () => {
   return (
@@ -16,7 +22,8 @@ export const HomeProjectCycle = () => {
         </p>
       </div>
 
-      <div className="mt-4 lg:mt-4 hidden lg:block relative">
+      {/* Desktop Only */}
+      <div className="mt-16 hidden lg:block relative">
         {/* Add any additional content or components for the project cycle section here */}
         <div className="w-full absolute min-h-40 px-4 pt-10">
           <ImageWithFallback
@@ -45,7 +52,7 @@ export const HomeProjectCycle = () => {
 
           {/* Grid 2 */}
           <div className="flex gap-2">
-            <FolderClosed className="shrink-0 size-12 text-primary" />
+            <Package className="shrink-0 size-12 mt-2 text-primary" />
             <div className="flex gap-2">
               <p className="text-9xl font-semibold text-violet-300">2</p>
               <div>
@@ -59,7 +66,7 @@ export const HomeProjectCycle = () => {
 
           {/* Grid 3 */}
           <div className="flex pt-36">
-            <User className="shrink-0 size-12 text-primary -translate-y-4" />
+            <Handshake className="shrink-0 size-12 text-primary -translate-y-4" />
             <div className="flex gap-2">
               <p className="text-9xl font-semibold text-violet-300">3</p>
               <div>
@@ -84,7 +91,134 @@ export const HomeProjectCycle = () => {
                 </p>
               </div>
             </div>
-            <User className="shrink-0 size-12 text-primary mt-20 rounded-full border border-violet-400" />
+            <RefreshCcw className="shrink-0 size-12 text-primary mt-20 rounded-full" />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Only */}
+      <div className="mt-4 block space-y-10 lg:hidden">
+        {/* First Grid */}
+        <div className=" flex relative items-center gap-4">
+          <div>
+            <div className="absolute w-full px-6 -z-10 pt-2">
+              <ImageWithFallback
+                src="/images/line.png"
+                width={1000}
+                height={1000}
+                fallbackSrc={fallbackImage}
+                alt="wave"
+                className="object-fill w-1 h-full max-h-40 "
+              />
+            </div>
+            <div className="z-10">
+              <User className="size-14 bg-white text-primary rounded-full" />
+            </div>
+          </div>
+          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+            <div className="flex h-full gap-2">
+              <div className="text-6xl font-jakarta-bold text-violet-300">
+                1
+              </div>
+              <div>
+                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                  People
+                </h3>
+                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                  People and teamwork matter most.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Grid */}
+        <div className=" flex relative items-center gap-4 mt-4">
+          <div>
+            <div className="absolute w-full px-6 -z-10 pt-2">
+              <ImageWithFallback
+                src="/images/line.png"
+                width={1000}
+                height={1000}
+                fallbackSrc={fallbackImage}
+                alt="wave"
+                className="object-fill w-1 h-full  max-h-40 "
+              />
+            </div>
+            <div className="z-10">
+              <Package className="size-14 bg-white text-primary rounded-full" />
+            </div>
+          </div>
+          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+            <div className="flex h-full gap-2">
+              <div className="text-6xl font-jakarta-bold text-violet-300">
+                2
+              </div>
+              <div>
+                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                  Product
+                </h3>
+                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                  Deliver functional products faster.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Third Grid */}
+        <div className=" flex relative items-center gap-4 mt-4">
+          <div>
+            <div className="absolute w-full px-6 -z-10 pt-2">
+              <ImageWithFallback
+                src="/images/line.png"
+                width={1000}
+                height={1000}
+                fallbackSrc={fallbackImage}
+                alt="wave"
+                className="object-fill w-1 h-full  max-h-40 "
+              />
+            </div>
+            <div className="z-10">
+              <Handshake className="size-14 bg-white text-primary rounded-full" />
+            </div>
+          </div>
+          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+            <div className="flex h-full gap-2">
+              <div className="text-6xl font-jakarta-bold text-violet-300">
+                3
+              </div>
+              <div>
+                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                  Partnership
+                </h3>
+                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                  Work closely with clients and feedback.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fourth Grid */}
+        <div className=" flex relative items-center gap-4 mt-4">
+          <div className="z-10">
+            <RefreshCcw className="size-14 bg-white text-primary rounded-full" />
+          </div>
+          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+            <div className="flex h-full gap-2">
+              <div className="text-6xl font-jakarta-bold text-violet-300">
+                4
+              </div>
+              <div>
+                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                  Adaptability
+                </h3>
+                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                  Adapt quickly as needs evolve.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
