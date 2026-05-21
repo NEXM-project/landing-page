@@ -23,7 +23,7 @@ export const HomeProjectCycle = () => {
       </div>
 
       {/* Desktop Only */}
-      <div className="mt-16 hidden lg:block relative">
+      <div className="mt-16 hidden xl:block relative">
         {/* Add any additional content or components for the project cycle section here */}
         <div className="w-full absolute min-h-40 px-4 pt-10">
           <ImageWithFallback
@@ -97,7 +97,7 @@ export const HomeProjectCycle = () => {
       </div>
 
       {/* Mobile Only */}
-      <div className="mt-4 block space-y-10 lg:hidden">
+      <div className="mt-4 block space-y-10 xl:hidden">
         {/* First Grid */}
         <div className=" flex relative items-center gap-4">
           <div>

@@ -37,16 +37,16 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
         delay: 5000,
         disableOnInteraction: false,
       }}
-      speed={600}
+      speed={1200}
       spaceBetween={20}
       slidesPerView={1}
       className="my-10"
     >
       {teamMembers?.map((member, index) => (
         <SwiperSlide key={index} className="overflow-hidden">
-          <div className="bg-primary text-white h-[66rem] lg:h-130 rounded-sm w-full overflow-hidden">
+          <div className="bg-primary text-white h-264 lg:h-130 rounded-sm w-full overflow-hidden">
             <div className="flex flex-col-reverse lg:flex-row gap-4 justify-between h-full">
-              <div className="space-y-6 lg:space-y-8 px-4 py-4 lg:px-16 lg:py-20 max-w-2xl overflow-hidden">
+              <div className="space-y-6 lg:space-y-8 px-4 py-4 lg:px-16 xl:py-20 max-w-2xl overflow-hidden">
                 <h3 className="text-2xl lg:text-4xl font-bold">
                   {member?.name}
                 </h3>

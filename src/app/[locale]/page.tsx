@@ -5,6 +5,7 @@ import { HomeEngineeringExcellence } from "@/components/home/HomeEngineeringExce
 import { HomeEnvironment } from "@/components/home/HomeEnvironment";
 import { HomeOurTeam } from "@/components/home/HomeOurTeam";
 import { HomeProjectCycle } from "@/components/home/HomeProjectCycle";
+import { LeadershipIntro } from "@/components/home/LeadershipIntro";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <HomeBanner />
       <HomeEnvironment />
+      <LeadershipIntro />
       <HomeOurTeam />
       <HomeEngineeringExcellence />
       <FeaturedProjects />

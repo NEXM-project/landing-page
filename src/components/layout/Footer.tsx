@@ -11,14 +11,14 @@ const navigationLinks = [
 export const Footer = () => {
   return (
     <footer className="relative z-10 border-t border-black/20 bg-white py-8 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto px-4 text-center flex flex-col lg:flex-row justify-between items-center gap-4">
+      <div className="xl:max-w-6xl mx-auto px-4 text-center flex flex-col lg:flex-row justify-between items-center gap-4">
         <div className="flex gap-2 items-center">
           <Hexagon className="fill-primary text-white" />
           <Link href="/" className="font-semibold text-2xl">
             NexM
           </Link>
         </div>
-        <div className="flex flex-col lg:min-w-5xl ">
+        <div className="flex flex-col xl:min-w-5xl ">
           <div className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-4">
             {navigationLinks.map((link) => (
               <Link
