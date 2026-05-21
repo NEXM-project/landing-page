@@ -15,6 +15,7 @@ interface TechStack {
 interface TeamMember {
   name: string;
   image: string;
+  imagePosition?: string;
   alt: string;
   description: string;
   techStacks: TechStack[];
@@ -43,16 +44,18 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
     >
       {teamMembers?.map((member, index) => (
         <SwiperSlide key={index} className="overflow-hidden">
-          <div className="lg:bg-linear-to-r lg:from-white lg:to-black min-h-40 lg:min-h-110 rounded-sm w-full h-full">
-            <div className="flex flex-col-reverse lg:flex-row gap-4 justify-between">
-              <div className="space-y-6 lg:space-y-8 px-4 py-4 lg:px-16 lg:py-20 max-w-2xl ">
-                <h3 className="text-2xl lg:text-4xl">{member?.name}</h3>
-                <p className="text-justify lg:text-left text-sm lg:text-base leading-6 lg:leading-8">
+          <div className="bg-primary text-white h-[66rem] lg:h-130 rounded-sm w-full overflow-hidden">
+            <div className="flex flex-col-reverse lg:flex-row gap-4 justify-between h-full">
+              <div className="space-y-6 lg:space-y-8 px-4 py-4 lg:px-16 lg:py-20 max-w-2xl overflow-hidden">
+                <h3 className="text-2xl lg:text-4xl font-bold">
+                  {member?.name}
+                </h3>
+                <p className="text-justify lg:text-left text-sm lg:text-base leading-6 lg:leading-8 ">
                   {member?.description}
                 </p>
                 <Link
                   href="#"
-                  className="text-text px-3 py-2 lg:px-6 lg:py-3 text-white text-base lg:text-xl bg-primary rounded-md hover:text-purple-800 font-semibold mt-0 lg:mt-8 inline-block "
+                  className="text-text px-3 py-2 lg:px-6 lg:py-3 text-primary text-base lg:text-xl bg-white rounded-md hover:text-primary/50 font-semibold mt-0 lg:mt-8 inline-block "
                 >
                   Learn more
                 </Link>
@@ -71,14 +74,15 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                   ))}
                 </div>
               </div>
-              <div className="w-full lg:w-96 min-h-40 lg:min-h-110">
+              <div className="relative w-full lg:w-150 h-150 lg:h-full overflow-hidden shrink-0">
+                <div className="absolute z-100 bg-linear-to-t lg:bg-linear-to-r from-primary to-transparent w-full h-full"></div>
                 <ImageWithFallback
                   src={member?.image}
                   width={400}
                   height={400}
                   fallbackSrc={fallbackImage}
                   alt={member?.alt}
-                  className="object-fill w-full h-full grayscale"
+                  className={`object-cover ${member?.imagePosition || "object-center"} w-full h-full grayscale`}
                 />
               </div>
             </div>

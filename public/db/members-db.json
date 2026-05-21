@@ -2,6 +2,7 @@
   {
     "name": "Tanvir Hasan Serazy",
     "image": "/images/our-team/serazy.png",
+    "imagePosition": "object-top",
     "alt": "Tanvir Hasan Serazy",
     "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
     "techStacks": [
