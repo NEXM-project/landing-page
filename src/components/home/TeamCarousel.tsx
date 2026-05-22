@@ -7,6 +7,7 @@ import { ImageWithFallback } from "../common/ImageWIthFallback";
 import { fallbackImage } from "@/utils/secrets";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { ArrowUpRight } from "lucide-react";
 
 interface TechStack {
   src: string;
@@ -53,13 +54,25 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                 <p className="text-justify lg:text-left text-sm lg:text-base leading-6 lg:leading-8 ">
                   {member?.description}
                 </p>
-                <Link
+
+                <div className="mt-0 lg:mt-8">
+                  <Link
+                    href="#"
+                    className=" hover:scale-105 transition-transform duration-600 inline-flex justify-center items-center gap-2 px-3 md:px-6 py-2 md:py-3 overflow-hidden bg-white text-primary rounded-full border border-primary font-medium cursor-pointer w-full lg:w-auto "
+                  >
+                    <p className="text-center md:text-start">Learn More</p>
+                    <ArrowUpRight />
+                  </Link>
+                </div>
+
+                {/* <Link
                   href="#"
                   className="text-text px-3 py-2 lg:px-6 lg:py-3 text-primary text-base lg:text-xl bg-white rounded-md hover:text-primary/50 font-semibold mt-0 lg:mt-8 inline-block "
                 >
                   Learn more
-                </Link>
-                <div className="flex flex-wrap gap-4">
+                </Link> */}
+
+                <div className="flex flex-wrap gap-4 ">
                   {member?.techStacks?.map((tech, index) => (
                     <ImageWithFallback
                       key={index}
@@ -69,7 +82,7 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                       height={400}
                       fallbackSrc={fallbackImage}
                       alt={`Tech stack icon ${index + 1}`}
-                      className="object-contain w-10 h-10"
+                      className="object-contain w-10 h-10 hover:scale-140 transition-transform duration-600"
                     />
                   ))}
                 </div>
@@ -78,8 +91,9 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                 <div className="absolute z-100 bg-linear-to-t lg:bg-linear-to-r from-primary to-transparent w-full h-full"></div>
                 <ImageWithFallback
                   src={member?.image}
-                  width={400}
-                  height={400}
+                  width={1200}
+                  height={1200}
+                  loading="eager"
                   fallbackSrc={fallbackImage}
                   alt={member?.alt}
                   className={`object-cover ${member?.imagePosition || "object-center"} w-full h-full grayscale`}

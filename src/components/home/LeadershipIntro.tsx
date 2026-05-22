@@ -85,7 +85,7 @@ export const LeadershipIntro = () => {
             textAlign="center"
           />
 
-          <p className="mt-4 lg:mt-10 text-gray-700 lg:text-xl">
+          <p className="mt-4 lg:mt-10 text-gray-700 lg:text-xl text-justify">
             Our CTO, John Doe, is a visionary leader with over 20 years of
             experience in the tech industry. He has a prove track record of
             driving innovation and leading successful teams to deliver
