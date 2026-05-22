@@ -1,38 +1,34 @@
 import { Mail, MapPin } from "lucide-react";
 import { HomeContactUsForm } from "./HomeContactUsForm";
+import { ImageWithFallback } from "../common/ImageWIthFallback";
 
 export const HomeContactUs = () => {
   return (
-    <div className="max-w-7xl mx-auto py-10 lg:py-30 flex flex-col lg:flex-row gap-8 lg:gap-16 px-4">
-      {/* Contact Information */}
-      <div className="max-w-md">
-        <p className="text-primary lg:text-xl font-semibold">
-          START A CONVERSATION
-        </p>
-        <h3 className="text-2xl lg:text-5xl font-semibold pt-4 lg:pt-6">
-          Ready to build?
-        </h3>
-        <p className="pt-4 lg:pt-6 text-justify">
-          Discuss your technical requirements with our engineering leads. We
-          provide actionable insights and architectural proposals within 48
-          hours.
-        </p>
-
-        <div className="pt-8 lg:pt-14 space-y-4">
-          <div className="flex gap-4 items-center ">
-            <Mail className="size-6 text-primary" />
-            <p>hello@nexm.com</p>
+    <div className="min-h-screen pt-25 flex justify-center">
+      <div className="xl:max-w-7xl mx-auto flex flex-col px-4">
+        <h2 className="text-4xl xl:text-7xl py-4 font-semibold">
+          Got plans? Let's turn them into something real
+        </h2>
+        <p className="xl:text-3xl py-4">Tell us what's on your mind </p>
+        <div className="border-b"></div>
+        <div className="grid grid-cols-1 xl:grid-cols-2 flex-1 gap-8">
+          <div className="w-full xl:w-fit py-10">
+            <div className="bg-primary/10 rounded-md p-5">
+              <ImageWithFallback
+                src="/images/contact-us-icon.png"
+                width="70"
+                height="70"
+                alt="image"
+              />
+              <p className="pb-2">+49 211 84 73 00</p>
+              <p className="pb-2">info@orchidstudio.com</p>
+              <p className="pb-2">Königsallee 27, Düsseldorf, Germany</p>
+            </div>
           </div>
-          <div className="flex gap-4 items-center ">
-            <MapPin className="size-6 text-primary" />
-            <p className="">Tokyo, Japan</p>
+          <div className="">
+            <HomeContactUsForm />
           </div>
         </div>
-      </div>
-
-      {/* Contact Form */}
-      <div className="w-full">
-        <HomeContactUsForm />
       </div>
     </div>
   );
