@@ -88,9 +88,15 @@ export const HomeContactUsForm = () => {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full rounded-md bg-primary py-4 xl:py-5 text-lg font-medium hover:bg-purple-700"
+          className="group relative w-full flex items-center justify-center gap-2 px-3 md:px-6 py-4 md:py-5 overflow-hidden bg-linear-to-b from-primary to-violet-900 rounded-full border border-primary text-white font-medium cursor-pointer transition-colors duration-600"
         >
-          {isSubmitting ? "Submitting..." : "Submit"}
+          <span className="relative z-10 transition-colors duration-600 group-hover:text-primary">
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </span>
+          <span
+            className="absolute bottom-0 left-0 right-0 h-0 bg-white z-0 transition-all duration-500 group-hover:h-full"
+            style={{ transformOrigin: "50% 100% 0px" }}
+          ></span>
         </Button>
       </form>
     </div>

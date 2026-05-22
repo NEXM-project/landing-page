@@ -1,3 +1,5 @@
+"use client";
+import { fadeInUp } from "@/utils/transition";
 import {
   Bot,
   Bug,
@@ -10,19 +12,41 @@ import {
   RefreshCw,
   Wrench,
 } from "lucide-react";
+import { motion } from "motion/react";
+import SplitText from "../SplitText";
 
 export const HomeEngineeringExcellence = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 lg:py-30">
+    <motion.div
+      className="max-w-7xl mx-auto px-4 py-10 min-h-screen"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUp}
+    >
       <h2 className="py-4 text-primary font-semibold text-center lg:text-lg">
         The NEXMTECH ADVANTAGE
       </h2>
       {/* Main Section */}
       <div className="flex justify-center w-full">
         <div>
-          <h2 className="text-xl md:text-2xl lg:text-5xl font-semibold leading-8 lg:leading-16 text-center">
+          <div className="text-center">
+            <SplitText
+              text="Engineering Excellence"
+              className="text-xl md:text-2xl lg:text-5xl font-semibold leading-8 lg:leading-16 text-center"
+              delay={10}
+              duration={1.25}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
+          </div>
+          {/* <h2 className="text-xl md:text-2xl lg:text-5xl font-semibold leading-8 lg:leading-16 text-center">
             Engineering Excellence
-          </h2>
+          </h2> */}
           <p className="font-sm lg:font-base text-center my-4">
             Comprehensive development services designed to scale your operations
             and integrate cutting-edge AI.
@@ -149,6 +173,6 @@ export const HomeEngineeringExcellence = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

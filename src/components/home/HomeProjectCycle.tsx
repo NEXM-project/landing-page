@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "motion/react";
+import { fadeInUp } from "@/utils/transition";
 import { fallbackImage } from "@/utils/secrets";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
 import {
@@ -7,14 +10,35 @@ import {
   RefreshCcw,
   User,
 } from "lucide-react";
+import SplitText from "../SplitText";
 
 export const HomeProjectCycle = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 my-10 lg:my-30">
+    <motion.div
+      className="max-w-7xl mx-auto px-4 my-10 lg:my-30"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUp}
+    >
       <div className="pb-10">
-        <h1 className="text-2xl lg:text-4xl font-semibold text-center">
+        <div className="text-center">
+          <SplitText
+            text={`Flexible Process. Scalable Solutions.`}
+            className="text-2xl lg:text-4xl font-semibold text-center"
+            delay={10}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
+        </div>
+        {/* <h1 className="text-2xl lg:text-4xl font-semibold text-center">
           Flexible Process. Scalable Solutions.
-        </h1>
+        </h1> */}
         <p className="text-base lg:text-xl mt-4 text-center max-w-3xl mx-auto">
           Our agile approach enables faster delivery, better collaboration, and
           continuous refinement—ensuring every product is built to grow with
@@ -38,7 +62,7 @@ export const HomeProjectCycle = () => {
         <div className="grid grid-cols-4 gap-4">
           {/* Grid 1 */}
           <div className="flex gap- pt-36">
-            <User className="shrink-0 size-12 text-primary" />
+            <User className="shrink-0 size-12 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
             <div className="flex gap-2">
               <p className="text-9xl font-semibold text-violet-300">1</p>
               <div>
@@ -52,7 +76,7 @@ export const HomeProjectCycle = () => {
 
           {/* Grid 2 */}
           <div className="flex gap-2">
-            <Package className="shrink-0 size-12 mt-2 text-primary" />
+            <Package className="shrink-0 size-12 mt-2 z-10 text-primary cursor-pointer hover:scale-130 hover:-rotate-15  transition-all duration-300" />
             <div className="flex gap-2">
               <p className="text-9xl font-semibold text-violet-300">2</p>
               <div>
@@ -66,7 +90,7 @@ export const HomeProjectCycle = () => {
 
           {/* Grid 3 */}
           <div className="flex pt-36">
-            <Handshake className="shrink-0 size-12 text-primary -translate-y-4" />
+            <Handshake className="shrink-0 size-12 -translate-y-4 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
             <div className="flex gap-2">
               <p className="text-9xl font-semibold text-violet-300">3</p>
               <div>
@@ -91,7 +115,7 @@ export const HomeProjectCycle = () => {
                 </p>
               </div>
             </div>
-            <RefreshCcw className="shrink-0 size-12 text-primary mt-20 rounded-full" />
+            <RefreshCcw className="shrink-0 size-12 text-primary mt-20 rounded-full cursor-pointer z-10 hover:scale-130 hover:-rotate-90 transition-all duration-300" />
           </div>
         </div>
       </div>
@@ -222,6 +246,6 @@ export const HomeProjectCycle = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

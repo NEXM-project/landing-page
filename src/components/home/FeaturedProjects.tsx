@@ -1,4 +1,8 @@
+"use client";
+import { motion } from "motion/react";
+import { fadeInUp } from "@/utils/transition";
 import { LogoLoop } from "../LogoLoop";
+import SplitText from "../SplitText";
 
 const imageLogos = [
   {
@@ -25,13 +29,34 @@ const imageLogos = [
 export const FeaturedProjects = () => {
   return (
     <>
-      <div className=" px-4 py-10 lg:py-30">
-        <p className=" max-w-7xl mx-auto text-center text-sm md:text-base text-primary">
+      <motion.div
+        className=" px-4 py-10 lg:py-30"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+      >
+        <p className=" max-w-7xl mx-auto text-center text-sm md:text-base font-medium text-primary">
           DELIVERING EXCELLENCE ACROSS INDUSTRIES.
         </p>
-        <h2 className="max-w-7xl mx-auto text-3xl lg:text-5xl font-semibold mb-6 text-center pt-4">
+
+        <div className="text-center pt-4 mb-6 ">
+          <SplitText
+            text="Featured Client Projects"
+            className="max-w-7xl mx-auto text-3xl lg:text-5xl font-semibold text-center lg:min-h-16"
+            delay={10}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
+        </div>
+        {/* <h2 className="max-w-7xl mx-auto text-3xl lg:text-5xl font-semibold mb-6 text-center pt-4">
           Featured Client Projects
-        </h2>
+        </h2> */}
         <div className="pt-4 lg:pt-8">
           <LogoLoop
             logos={imageLogos}
@@ -46,7 +71,7 @@ export const FeaturedProjects = () => {
             ariaLabel="Technology partners"
           />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
