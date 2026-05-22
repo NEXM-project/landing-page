@@ -4,6 +4,9 @@ import { ImageWithFallback } from "../common/ImageWIthFallback";
 import { Zap } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { CountUp } from "countup.js";
+import SplitText from "../SplitText";
+import { motion } from "motion/react";
+import { fadeInUp } from "@/utils/transition";
 
 const cardsData = [
   {
@@ -57,17 +60,42 @@ export const HomeEnvironment = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 lg:py-30">
-      <h2 className="py-4 text-primary font-semibold text-base lg:text-lg">
-        The NEXMTECH ADVANTAGE
-      </h2>
+    <div className="max-w-7xl mx-auto px-4 my-10 lg:my-30 min-h-screen flex flex-col justify-center gap-10 ">
+      {/* <SplitText
+        text="The NEXMTECH Advantage"
+        className="py-4 text-primary font-semibold text-base lg:text-lg"
+        delay={50}
+        duration={1.25}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+      /> */}
 
       {/* Main Section */}
-      <div className="flex flex-col-reverse lg:flex-row gap-4 justify-between">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        className="flex flex-col-reverse lg:flex-row gap-4 justify-between"
+      >
         <div>
-          <h2 className="text-xl md:text-2xl lg:text-5xl max-w-lg font-semibold leading-8 lg:leading-16">
-            Engineered for High- Trust Environments.
-          </h2>
+          <SplitText
+            text="Engineered for Trust"
+            className="text-xl md:text-2xl lg:text-5xl max-w-lg font-semibold leading-8 lg:leading-16"
+            delay={50}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
           <p className="max-w-lg font-sm lg:font-base text-justify mt-4">
             We don't just write code; we build resilient systems. Our agency is
             founded on the principles of precision, speed-to-market, and robust
@@ -104,16 +132,23 @@ export const HomeEnvironment = () => {
           <ImageWithFallback
             src="/images/home-enviroment.png"
             alt="home enviroment"
+            loading="eager"
             fallbackSrc={fallbackImage}
-            width={500}
-            height={500}
+            width={1500}
+            height={900}
             className="rounded-md object-cover w-full lg:w-lg lg:max-h-80  h-full"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Cards */}
-      <div className="py-6 " ref={containerRef}>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        className="py-6 "
+        ref={containerRef}
+      >
         <div className="flex flex-col lg:flex-row gap-4">
           {cardsData &&
             cardsData?.map((card, index) => (
@@ -133,7 +168,7 @@ export const HomeEnvironment = () => {
               </div>
             ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
