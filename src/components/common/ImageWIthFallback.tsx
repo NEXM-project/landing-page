@@ -1,16 +1,17 @@
 "use client";
+import { fallbackImage } from "@/utils/secrets";
 import Image from "next/image";
 import { useState } from "react";
 
 export const ImageWithFallback = (props: any) => {
   const { src, fallbackSrc, ...rest } = props;
-  const [imgSrc, setImageSrc] = useState(src);
+  const [imgSrc, setImageSrc] = useState(src || "/");
   return (
     <Image
       {...rest}
       src={imgSrc}
       onError={() => {
-        setImageSrc(fallbackSrc);
+        setImageSrc(fallbackSrc || fallbackImage);
       }}
     />
   );
