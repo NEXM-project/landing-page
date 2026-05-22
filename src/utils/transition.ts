@@ -12,6 +12,6 @@ export const fadeInUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: cubicBezier(0.4, 0, 0.2, 1) },
+    transition: { duration: 0.9, ease: cubicBezier(0.4, 0, 0.2, 1) },
   },
 };
