@@ -3,6 +3,7 @@ import { HomeBanner } from "@/components/home/HomeBanner";
 import { HomeContactUs } from "@/components/home/HomeContactUs";
 import { HomeEngineeringExcellence } from "@/components/home/HomeEngineeringExcellence";
 import { HomeEnvironment } from "@/components/home/HomeEnvironment";
+import { HomeFAQ } from "@/components/home/HomeFAQ";
 import { HomeOurTeam } from "@/components/home/HomeOurTeam";
 import { HomeProjectCycle } from "@/components/home/HomeProjectCycle";
 import { LeadershipIntro } from "@/components/home/LeadershipIntro";
@@ -19,6 +20,7 @@ export default function Home() {
       <HomeEngineeringExcellence />
       <FeaturedProjects />
       <HomeProjectCycle />
+      <HomeFAQ />
       <HomeContactUs />
     </>
   );
