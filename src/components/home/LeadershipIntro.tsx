@@ -57,9 +57,9 @@ export const LeadershipIntro = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}
-        className="max-w-7xl w-full mx-auto px-4 flex flex-col xl:flex-row gap-4 xl:gap-10"
+        className="max-w-7xl w-full mx-auto px-4 flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-10"
       >
-        <div className="xl:max-h-140 w-full xl:w-1/2 ">
+        <div className="xl:max-h-140 w-full md:w-1/2">
           <ImageWithFallback
             src="/images/leader-intro.jpg"
             alt="Leadership Team"
@@ -67,13 +67,13 @@ export const LeadershipIntro = () => {
             height={400}
             fallbackSrc={fallbackImage}
             loading="eager"
-            className="w-full h-1/2 xl:h-full object-cover rounded-md"
+            className="w-full h-1/2 md:h-full object-cover rounded-md"
           />
         </div>
-        <div className="w-full xl:w-1/2">
+        <div className="w-full md:w-1/2">
           <SplitText
             text="Meet Our CTO"
-            className="text-center text-2xl lg:text-5xl font-semibold"
+            className="text-center md:text-left text-2xl md:text-4xl lg:text-5xl font-semibold"
             delay={50}
             duration={1.25}
             ease="power3.out"
@@ -85,7 +85,7 @@ export const LeadershipIntro = () => {
             textAlign="center"
           />
 
-          <p className="mt-4 lg:mt-10 text-gray-700 lg:text-xl text-justify">
+          <p className="mt-4 md:mt-6 lg:mt-10 text-gray-700 md:text-lg lg:text-xl text-justify md:text-left">
             Our CTO, John Doe, is a visionary leader with over 20 years of
             experience in the tech industry. He has a prove track record of
             driving innovation and leading successful teams to deliver
@@ -95,21 +95,7 @@ export const LeadershipIntro = () => {
             excellence inspire our entire team to strive for greatness everyday.
           </p>
 
-          {/* <SplitText
-            text="Our CTO, John Doe, is a visionary leader with over 20 years of experience in the tech industry. He has a prove track record of driving innovation and leading successful teams to deliver cutting-edge solutions. Under his leadership, our company has achieved significant milestones and continues to push the boundaries of technology. John's passion for technology and commitment to excellence inspire our entire team to strive for greatness everyday."
-            className="mt-4 lg:mt-10 text-gray-700 lg:text-xl"
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="lines"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="left"
-          /> */}
-
-          <div className="mt-10 lg:mt-12">
+          <div className="mt-10 md:mt-8 lg:mt-12 flex justify-center md:justify-start">
             <Link
               href="#"
               className="group relative inline-flex items-center gap-2 px-3 md:px-6 py-2 md:py-3 overflow-hidden bg-linear-to-b from-primary to-violet-900 rounded-full border border-primary text-white font-medium cursor-pointer"
@@ -125,43 +111,43 @@ export const LeadershipIntro = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col xl:flex-row gap-4 mt-6 lg:mt-12">
-            <div className="lg:border-r lg:border-gray-300  px-2 flex gap-2 justify-center">
+          <div className="flex flex-col md:flex-row xl:flex-row gap-4 mt-6 md:mt-8 lg:mt-12 flex-wrap md:flex-nowrap">
+            <div className="lg:border-r lg:border-gray-300 px-2 flex md:flex-col lg:flex-row gap-2 justify-center md:items-start lg:items-center">
               <span
-                className="font-medium text-2xl lg:text-4xl lg:w-20"
+                className="font-medium text-2xl md:text-3xl lg:text-4xl lg:w-20 text-center md:text-left"
                 ref={(el) => {
                   countersRef.current[0] = el;
                 }}
               >
                 0+
               </span>
-              <span className="text-gray-700 text-base lg:text-xl">
+              <span className="text-gray-700 text-base md:text-sm lg:text-xl text-center md:text-left">
                 Startups Supported
               </span>
             </div>
-            <div className="lg:border-r lg:border-gray-300 flex gap-2 justify-center px-2">
+            <div className="lg:border-r lg:border-gray-300 flex md:flex-col lg:flex-row gap-2 justify-center md:items-start lg:items-center px-2">
               <span
-                className="font-medium text-2xl lg:text-4xl xl:w-18"
+                className="font-medium text-2xl md:text-3xl lg:text-4xl xl:w-18 text-center md:text-left"
                 ref={(el) => {
                   countersRef.current[1] = el;
                 }}
               >
                 0+
               </span>
-              <span className="text-gray-700 text-base lg:text-xl">
+              <span className="text-gray-700 text-base md:text-sm lg:text-xl text-center md:text-left">
                 Projects Delivered
               </span>
             </div>
-            <div className=" flex gap-2 justify-center">
+            <div className="flex md:flex-col lg:flex-row gap-2 justify-center md:items-start lg:items-center px-2">
               <span
-                className="font-medium text-2xl lg:text-4xl xl:w-12"
+                className="font-medium text-2xl md:text-3xl lg:text-4xl xl:w-12 text-center md:text-left"
                 ref={(el) => {
                   countersRef.current[2] = el;
                 }}
               >
                 0+
               </span>
-              <span className="text-gray-700 text-base xl:text-xl">
+              <span className="text-gray-700 text-base md:text-sm xl:text-xl text-center md:text-left">
                 Years of Experience
               </span>
             </div>

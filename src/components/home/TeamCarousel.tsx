@@ -45,20 +45,20 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
     >
       {teamMembers?.map((member, index) => (
         <SwiperSlide key={index} className="overflow-hidden">
-          <div className="bg-primary text-white h-264 lg:h-130 rounded-sm w-full overflow-hidden">
-            <div className="flex flex-col-reverse lg:flex-row gap-4 justify-between h-full">
-              <div className="space-y-6 lg:space-y-8 px-4 py-4 lg:px-16 xl:py-20 max-w-2xl overflow-hidden">
-                <h3 className="text-2xl lg:text-4xl font-bold">
+          <div className="bg-primary text-white h-auto sm:h-264 md:h-160 lg:h-130 rounded-sm w-full overflow-hidden">
+            <div className="flex flex-col-reverse md:flex-row gap-4 justify-between h-full">
+              <div className="space-y-6 md:space-y-7 lg:space-y-8 px-4 py-8 md:px-8 md:py-10 lg:px-16 xl:py-20 max-w-2xl overflow-hidden flex flex-col justify-center">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">
                   {member?.name}
                 </h3>
-                <p className="text-justify lg:text-left text-sm lg:text-base leading-6 lg:leading-8 ">
+                <p className="text-justify md:text-left text-sm md:text-base leading-6 md:leading-7 lg:leading-8 ">
                   {member?.description}
                 </p>
 
-                <div className="mt-0 lg:mt-8">
+                <div className="mt-0 md:mt-4 lg:mt-8">
                   <Link
                     href="#"
-                    className=" hover:scale-105 transition-transform duration-600 inline-flex justify-center items-center gap-2 px-3 md:px-6 py-2 md:py-3 overflow-hidden bg-white text-primary rounded-full border border-primary font-medium cursor-pointer w-full lg:w-auto "
+                    className=" hover:scale-105 transition-transform duration-600 inline-flex justify-center items-center gap-2 px-3 md:px-6 py-2 md:py-3 overflow-hidden bg-white text-primary rounded-full border border-primary font-medium cursor-pointer w-full md:w-auto "
                   >
                     <p className="text-center md:text-start">Learn More</p>
                     <ArrowUpRight />
@@ -72,7 +72,7 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                   Learn more
                 </Link> */}
 
-                <div className="flex flex-wrap gap-4 ">
+                <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
                   {member?.techStacks?.map((tech, index) => (
                     <ImageWithFallback
                       key={index}
@@ -87,8 +87,8 @@ export const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                   ))}
                 </div>
               </div>
-              <div className="relative w-full lg:w-150 h-150 lg:h-full overflow-hidden shrink-0">
-                <div className="absolute z-100 bg-linear-to-t lg:bg-linear-to-r from-primary to-transparent w-full h-full"></div>
+              <div className="relative w-full md:w-1/2 lg:w-150 h-100 sm:h-150 md:h-full lg:h-full overflow-hidden shrink-0">
+                <div className="absolute z-100 bg-linear-to-t md:bg-linear-to-r from-primary to-transparent w-full h-full"></div>
                 <ImageWithFallback
                   src={member?.image}
                   width={1200}
