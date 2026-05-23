@@ -15,7 +15,7 @@ export const HomeContactUs = () => {
     >
       <div className="xl:max-w-7xl w-full mx-auto flex flex-col px-4">
         <SplitText
-          text={`Flexible Process. Scalable Solutions.`}
+          text={`Got plans? Let's turn them into something real.`}
           className="text-3xl sm:text-4xl xl:text-6xl text-nowrap py-4 font-semibold "
           delay={20}
           duration={1.25}

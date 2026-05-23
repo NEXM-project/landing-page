@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollToTopButton } from "@/components/layout/ScrollToTopButton";
+import { LocaleSwitcherToggle } from "@/components/layout/LocaleSwitcherToggle";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -37,6 +38,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
           <main className="flex-1">{children}</main>
           <Footer />
           <ScrollToTopButton />
+          <LocaleSwitcherToggle />
         </NextIntlClientProvider>
       </body>
     </html>

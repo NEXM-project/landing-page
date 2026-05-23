@@ -28,7 +28,8 @@ export const Header = () => {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:max-w-4xl xl:max-w-7xl px-4">
+    // <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:max-w-4xl xl:max-w-7xl px-4">
+    <header className="mx-auto w-full z-50 md:max-w-4xl xl:max-w-7xl px-4 absolute top-6 left-1/2 transform -translate-x-1/2">
       <div className="backdrop-blue-md bg-white border border-black/20 rounded-lg px-8 sm:px-10 md:px-12 py-4 flex items-center justify-between gap-4">
         <div className="flex gap-2 items-center">
           <Hexagon className="fill-primary text-white" />
@@ -38,7 +39,7 @@ export const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex gap-6">
+        {/* <div className="hidden lg:flex gap-6">
           {navigationLinks.map((link) => (
             <Link
               key={link.label}
@@ -52,14 +53,14 @@ export const Header = () => {
               {link.label}
             </Link>
           ))}
-        </div>
+        </div> */}
 
         {/* Locale Switcher */}
         <div className="hidden lg:flex items-center gap-2">
           <button className="p-2 bg-primary text-white  rounded-sm">
             Get a quote
           </button>
-          <LocaleSwitcherSelect defaultValue={locale} label="Change language" />
+          {/* <LocaleSwitcherSelect defaultValue={locale} label="Change language" /> */}
         </div>
 
         {/* Mobile Navigation */}
@@ -73,7 +74,7 @@ export const Header = () => {
             className="bg-white/80 border-l border-white/20 p-4"
           >
             <div className="flex flex-col gap-6 mt-8 ">
-              {navigationLinks.map((link) => (
+              {/* {navigationLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
@@ -86,15 +87,15 @@ export const Header = () => {
                 >
                   {link.label}
                 </Link>
-              ))}
+              ))} */}
               <div className="lg:hidden flex flex-col gap-4 ">
                 <button className="p-2 bg-primary text-white  rounded-sm">
                   Get a quote
                 </button>
-                <LocaleSwitcherSelect
+                {/* <LocaleSwitcherSelect
                   defaultValue={locale}
                   label="Change language"
-                />
+                /> */}
               </div>
             </div>
           </SheetContent>

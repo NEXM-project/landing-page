@@ -8,7 +8,7 @@ import { ImageWithFallback } from "../common/ImageWIthFallback";
 export const HomeBanner = () => {
   return (
     <section>
-      <div className="relative min-h-screen flex h-full  lg:h-200 w-full items-center justify-center bg-white dark:bg-black">
+      <div className="relative min-h-screen flex h-full w-full lg:h-200 items-center justify-center bg-white dark:bg-black overflow-hidden">
         <div
           className={cn(
             "absolute inset-0",
@@ -17,6 +17,7 @@ export const HomeBanner = () => {
             "dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
           )}
         />
+        <div className="absolute z-10 bg-linear-to-t lg:bg-linear-to-bottom from-white to-transparent w-full h-full lg:h-[150%]"></div>
         <div className="xl:max-w-7xl w-full relative mx-auto px-4 lg:px-0 min-h-[60vh] z-20 mt-10 lg:mt-48 mb-10 lg:mb-20 ">
           <div className="flex flex-col items-center justify-center w-full">
             <BlurText
@@ -60,7 +61,7 @@ export const HomeBanner = () => {
           <div className="flex justify-center mt-10 lg:mt-12">
             <Link
               href="#"
-              className="group relative inline-flex items-center gap-2 px-3 md:px-6 py-2 md:py-3 overflow-hidden bg-linear-to-b from-primary to-violet-900 rounded-full border border-primary text-white font-medium cursor-pointer"
+              className="group relative inline-flex items-center gap-2 px-3 md:pl-6 md:pr-4 py-2 md:py-3 overflow-hidden bg-linear-to-b from-primary to-violet-900 rounded-full border border-primary text-white font-medium cursor-pointer"
             >
               <span className="relative z-10 transition-colors duration-600 group-hover:text-primary">
                 Discuss Your Project

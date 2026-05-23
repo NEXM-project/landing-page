@@ -95,7 +95,7 @@ export const HomeContactUsForm = () => {
             placeholder="Tell us about your new idea"
             {...register("message")}
             aria-invalid={errors.message ? "true" : "false"}
-            className="my-2 min-h-[150px] rounded-md"
+            className="my-2 min-h-37.5 rounded-md"
           />
           {errors.message && (
             <p className="text-sm text-destructive">{errors.message.message}</p>

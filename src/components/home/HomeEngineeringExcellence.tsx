@@ -1,5 +1,5 @@
 "use client";
-import { fadeInUp } from "@/utils/transition";
+import { fadeInLeft, fadeInUp } from "@/utils/transition";
 import {
   Bot,
   Bug,
@@ -65,7 +65,12 @@ export const HomeEngineeringExcellence = () => {
                   next-generation intelligent applications.
                 </p>
               </div>
-              <div className="grid lg:grid-cols-2 grid-cols-1 *:h-20 *:rounded-md gap-4 *:p-4">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                className="grid lg:grid-cols-2 grid-cols-1 *:h-20 *:rounded-md gap-4 *:p-4"
+              >
                 <div className="bg-gray-100 flex items-center gap-3">
                   <MessageSquare color="#6d28d9" />
                   <div>
@@ -110,7 +115,7 @@ export const HomeEngineeringExcellence = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -124,22 +129,42 @@ export const HomeEngineeringExcellence = () => {
                 automated processes.
               </p>
               <div className="grid grid-cols-1 gap-2 *:border-b-[0.5px] space-y-1 *:border-gray-300 *:text-xs *:lg:text-sm *:pb-2">
-                <div className="flex items-center gap-2">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={fadeInLeft}
+                  className="flex items-center gap-2"
+                >
                   <CheckLine color="#6d28d9" />
                   <p>Internal Tools</p>
-                </div>
-                <div className="flex items-center gap-2">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={fadeInLeft}
+                  className="flex items-center gap-2"
+                >
                   <CheckLine color="#6d28d9" />
                   <p>Dashboard Development</p>
-                </div>
-                <div className="flex items-center gap-2">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={fadeInLeft}
+                  className="flex items-center gap-2"
+                >
                   <CheckLine color="#6d28d9" />
                   <p>Workflow Automation</p>
-                </div>
-                <div className="flex items-center gap-2">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={fadeInLeft}
+                  className="flex items-center gap-2"
+                >
                   <CheckLine color="#6d28d9" />
                   <p>Shopify Custom Dev & CMS</p>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="lg:col-span-3 flex lg:flex-row flex-col gap-4 justify-between">
@@ -155,7 +180,12 @@ export const HomeEngineeringExcellence = () => {
                   automated processes.
                 </p>
               </div>
-              <div className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4    *:py-4">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4    *:py-4"
+              >
                 <div className="bg-gray-100 flex flex-col items-center px-2 justify-center gap-2">
                   <RefreshCw color="#6d28d9" className="" />
                   <p className="">Ongoing Maintenance</p>
@@ -168,7 +198,7 @@ export const HomeEngineeringExcellence = () => {
                   <Logs color="#6d28d9" />
                   <p>QA Automation</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
