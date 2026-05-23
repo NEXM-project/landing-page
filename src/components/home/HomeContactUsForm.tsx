@@ -27,6 +27,7 @@ export const HomeContactUsForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormInputs>({
     resolver: zodResolver(contactFormSchema),
@@ -35,6 +36,21 @@ export const HomeContactUsForm = () => {
   const onSubmit = async (data: ContactFormInputs) => {
     try {
       console.log("Form Data:", data);
+
+      const response = await fetch(
+        "https://formsubmit.co/ajax/4958a03dc07c0ed44bb9764d3d4a7380",
+        {
+          method: "POST", // Specify the method
+          headers: {
+            "Content-Type": "application/json", // Tell the server we are sending JSON
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data), // The actual data being sent
+        },
+      );
+      const result = await response.json();
+      console.log("Response: ", result);
+      reset();
     } catch (error) {
       console.error("Form submission error:", error);
     }
