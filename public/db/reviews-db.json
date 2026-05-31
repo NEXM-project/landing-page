@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Sarah Chen",
+    "company": "TechFlow Inc.",
+    "position": "CTO",
+    "stars": 5,
+    "review": "Exceptional team. Delivered our platform ahead of schedule with zero critical bugs. Deep technical expertise and proactive communication throughout.",
+    "image": "/images/reviews/sarah-chen.jpg",
+    "imagePosition": "object-top"
+  },
+  {
+    "name": "James Rodriguez",
+    "company": "NovaSoft Solutions",
+    "position": "Product Director",
+    "stars": 5,
+    "review": "Transformed our outdated UI into a modern, responsive experience. User engagement up 40% post-launch. Will definitely work with them again.",
+    "image": "/images/reviews/james-rodriguez.jpg",
+    "imagePosition": "object-center"
+  },
+  {
+    "name": "Aisha Patel",
+    "company": "DataSphere Analytics",
+    "position": "Engineering Manager",
+    "stars": 4,
+    "review": "Solid engineering work. Clean code, thorough documentation, and great API design. Only minor delays on the integration phase.",
+    "image": "/images/reviews/aisha-patel.jpg",
+    "imagePosition": "object-bottom"
+  },
+  {
+    "name": "Marcus Webb",
+    "company": "Orbit Digital",
+    "position": "VP of Engineering",
+    "stars": 5,
+    "review": "Best dev team we've partnered with. They don't just code — they challenge requirements and suggest better approaches. Reduced our bundle size by 60%.",
+    "image": "/images/reviews/marcus-webb.jpg",
+    "imagePosition": "object-top"
+  },
+  {
+    "name": "Yuki Tanaka",
+    "company": "PixelGrid Studio",
+    "position": "Creative Director",
+    "stars": 5,
+    "review": "Pixel-perfect implementation of our complex Figma designs. Animations are buttery smooth. Rare to find devs who care this much about quality.",
+    "image": "/images/reviews/yuki-tanaka.jpg",
+    "imagePosition": "object-center"
+  }
+]
