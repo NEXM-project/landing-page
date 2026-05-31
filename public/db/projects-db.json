@@ -1,0 +1,44 @@
+[
+  {
+    "name": "E-Commerce Platform Redesign",
+    "date": "Oct 12, 2025",
+    "description": "A complete overhaul of the shopping experience, resulting in a 40% increase in user engagement and seamless checkout flows.",
+    "tags": ["React", "Next.js", "Tailwind CSS", "Stripe"],
+    "image": "/images/projects/project1.webp"
+  },
+  {
+    "name": "Analytics Dashboard",
+    "date": "Jun 04, 2025",
+    "description": "Built a real-time data visualization dashboard capable of processing millions of events per minute with sub-second latency.",
+    "tags": ["TypeScript", "Vue", "D3.js", "Node.js"],
+    "image": "/images/projects/project2.webp"
+  },
+  {
+    "name": "Mobile Banking App",
+    "date": "Nov 18, 2024",
+    "description": "Developed a secure and accessible mobile banking application used by over 100,000 customers daily.",
+    "tags": ["React Native", "GraphQL", "AWS"],
+    "image": "/images/projects/project3.webp"
+  },
+  {
+    "name": "AI Content Generator",
+    "date": "Feb 28, 2026",
+    "description": "Integrated large language models into a custom CMS to automate and enhance content creation workflows.",
+    "tags": ["Python", "FastAPI", "OpenAI", "React"],
+    "image": "/images/projects/project4.webp"
+  },
+  {
+    "name": "Healthcare Provider Portal",
+    "date": "Aug 22, 2025",
+    "description": "Designed a HIPAA-compliant portal for healthcare providers to seamlessly manage patient records and appointments.",
+    "tags": ["React", "Go", "PostgreSQL", "Docker"],
+    "image": "/images/projects/project5.webp"
+  },
+  {
+    "name": "Smart Home IoT Controller",
+    "date": "Jan 15, 2026",
+    "description": "A centralized hub app for controlling and automating various smart home devices across multiple protocols.",
+    "tags": ["Flutter", "Rust", "MQTT", "Firebase"],
+    "image": "/images/projects/project6.webp"
+  }
+]
