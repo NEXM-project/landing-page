@@ -15,9 +15,9 @@ import { useState } from "react";
 
 const navigationLinks = [
   { href: "#", label: "Services" },
-  { href: "#", label: "Portfolio" },
-  { href: "#", label: "About Us" },
-  { href: "#", label: "Insights" },
+  { href: "#", label: "Projects" },
+  { href: "#", label: "Nodi AI" },
+  { href: "#", label: "Team" },
 ];
 
 export const Header = () => {
@@ -39,7 +39,7 @@ export const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        {/* <div className="hidden lg:flex gap-6">
+        <div className="hidden lg:flex gap-6">
           {navigationLinks.map((link) => (
             <Link
               key={link.label}
@@ -53,7 +53,7 @@ export const Header = () => {
               {link.label}
             </Link>
           ))}
-        </div> */}
+        </div>
 
         {/* Locale Switcher */}
         <div className="hidden lg:flex items-center gap-2">
@@ -74,7 +74,7 @@ export const Header = () => {
             className="bg-white/80 border-l border-white/20 p-4"
           >
             <div className="flex flex-col gap-6 mt-8 ">
-              {/* {navigationLinks.map((link) => (
+              {navigationLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
@@ -87,7 +87,7 @@ export const Header = () => {
                 >
                   {link.label}
                 </Link>
-              ))} */}
+              ))}
               <div className="lg:hidden flex flex-col gap-4 ">
                 <button className="p-2 bg-primary text-white  rounded-sm">
                   Get a quote
