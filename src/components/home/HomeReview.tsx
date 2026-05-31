@@ -70,7 +70,7 @@ const ReviewNavigation = ({ total }: { total: number }) => {
 export const HomeReview = () => {
   return (
     <section className="bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-4 ">
         <Swiper className="!pb-28 md:!pb-24 select-none" grabCursor={true}>
           {reviewData.map((review: Review, index: number) => (
             <SwiperSlide key={index}>
