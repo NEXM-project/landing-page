@@ -1,251 +1,245 @@
 "use client";
-import { motion } from "motion/react";
-import { fadeInUp } from "@/utils/transition";
 import { fallbackImage } from "@/utils/secrets";
+import { fadeInUp } from "@/utils/transition";
+import { Handshake, Package, RefreshCcw, User } from "lucide-react";
+import { motion } from "motion/react";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
-import {
-  FolderClosed,
-  Handshake,
-  Package,
-  RefreshCcw,
-  User,
-} from "lucide-react";
 import SplitText from "../SplitText";
 
 export const HomeProjectCycle = () => {
   return (
-    <motion.div
-      className="max-w-7xl mx-auto px-4 my-10 lg:my-30"
+    <motion.section
+      className="bg-gray-50 py-10 lg:py-30"
       initial="hidden"
       whileInView="visible"
       variants={fadeInUp}
     >
-      <div className="pb-10">
-        <div className="text-center">
-          <SplitText
-            text={`Flexible Process. Scalable Solutions.`}
-            className="text-2xl lg:text-4xl font-semibold text-center"
-            delay={10}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-          />
-        </div>
-        {/* <h1 className="text-2xl lg:text-4xl font-semibold text-center">
+      <div className="max-w-7xl mx-auto px-4 ">
+        <div className="pb-10">
+          <div className="text-center">
+            <SplitText
+              text={`Flexible Process. Scalable Solutions.`}
+              className="text-2xl lg:text-4xl font-semibold text-center"
+              delay={10}
+              duration={1.25}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
+          </div>
+          {/* <h1 className="text-2xl lg:text-4xl font-semibold text-center">
           Flexible Process. Scalable Solutions.
         </h1> */}
-        <p className="text-base lg:text-xl mt-4 text-center max-w-3xl mx-auto">
-          Our agile approach enables faster delivery, better collaboration, and
-          continuous refinement—ensuring every product is built to grow with
-          your vision.
-        </p>
-      </div>
-
-      {/* Desktop Only */}
-      <div className="mt-16 hidden xl:block relative">
-        {/* Add any additional content or components for the project cycle section here */}
-        <div className="w-full absolute min-h-40 px-4 pt-10">
-          <ImageWithFallback
-            src="/images/path.png"
-            width={1000}
-            height={1000}
-            fallbackSrc={fallbackImage}
-            alt="wave"
-            className="object-fill w-full h-full  min-h-40 "
-          />
+          <p className="text-base lg:text-xl mt-4 text-center max-w-3xl mx-auto">
+            Our agile approach enables faster delivery, better collaboration,
+            and continuous refinement—ensuring every product is built to grow
+            with your vision.
+          </p>
         </div>
-        <div className="grid grid-cols-4 gap-4">
-          {/* Grid 1 */}
-          <div className="flex gap- pt-36">
-            <User className="shrink-0 size-12 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
-            <div className="flex gap-2">
-              <p className="text-9xl font-semibold text-violet-300">1</p>
-              <div>
-                <p className="text-3xl mt-2">People</p>
-                <p className="text-base mt-2">
-                  People and teamwork matter most.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          {/* Grid 2 */}
-          <div className="flex gap-2">
-            <Package className="shrink-0 size-12 mt-2 z-10 text-primary cursor-pointer hover:scale-130 hover:-rotate-15  transition-all duration-300" />
-            <div className="flex gap-2">
-              <p className="text-9xl font-semibold text-violet-300">2</p>
-              <div>
-                <p className="text-3xl mt-2">Product</p>
-                <p className="text-base mt-2 ">
-                  Deliver functional products faster.
-                </p>
-              </div>
-            </div>
+        {/* Desktop Only */}
+        <div className="mt-16 hidden xl:block relative">
+          {/* Add any additional content or components for the project cycle section here */}
+          <div className="w-full absolute min-h-40 px-4 pt-10">
+            <ImageWithFallback
+              src="/images/path.png"
+              width={1000}
+              height={1000}
+              fallbackSrc={fallbackImage}
+              alt="wave"
+              className="object-fill w-full h-full  min-h-40 "
+            />
           </div>
-
-          {/* Grid 3 */}
-          <div className="flex pt-36">
-            <Handshake className="shrink-0 size-12 -translate-y-4 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
-            <div className="flex gap-2">
-              <p className="text-9xl font-semibold text-violet-300">3</p>
-              <div>
-                <p className="text-3xl mt-2">Partnership</p>
-                <p className="text-base mt-2 ">
-                  Work closely with clients and feedback.
-                </p>
+          <div className="grid grid-cols-4 gap-4">
+            {/* Grid 1 */}
+            <div className="flex gap- pt-36">
+              <User className="shrink-0 size-12 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
+              <div className="flex gap-2">
+                <p className="text-9xl font-semibold text-violet-300">1</p>
+                <div>
+                  <p className="text-3xl mt-2">People</p>
+                  <p className="text-base mt-2">
+                    People and teamwork matter most.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Grid 4 */}
-          <div className="flex gap-2">
+            {/* Grid 2 */}
             <div className="flex gap-2">
-              <p className="text-9xl font-semibold bg-white  text-violet-300">
-                4
-              </p>
-              <div>
-                <p className="text-3xl mt-2">Adaptability</p>
-                <p className="text-base mt-2 ">
-                  Adapt quickly as needs evolve.
-                </p>
+              <Package className="shrink-0 size-12 mt-2 z-10 text-primary cursor-pointer hover:scale-130 hover:-rotate-15  transition-all duration-300" />
+              <div className="flex gap-2">
+                <p className="text-9xl font-semibold text-violet-300">2</p>
+                <div>
+                  <p className="text-3xl mt-2">Product</p>
+                  <p className="text-base mt-2 ">
+                    Deliver functional products faster.
+                  </p>
+                </div>
               </div>
             </div>
-            <RefreshCcw className="shrink-0 size-12 text-primary mt-20 rounded-full cursor-pointer z-10 hover:scale-130 hover:-rotate-90 transition-all duration-300" />
+
+            {/* Grid 3 */}
+            <div className="flex pt-36">
+              <Handshake className="shrink-0 size-12 -translate-y-4 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
+              <div className="flex gap-2">
+                <p className="text-9xl font-semibold text-violet-300">3</p>
+                <div>
+                  <p className="text-3xl mt-2">Partnership</p>
+                  <p className="text-base mt-2 ">
+                    Work closely with clients and feedback.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Grid 4 */}
+            <div className="flex gap-2">
+              <div className="flex gap-2">
+                <p className="text-9xl font-semibold text-violet-300">4</p>
+                <div>
+                  <p className="text-3xl mt-2">Adaptability</p>
+                  <p className="text-base mt-2 ">
+                    Adapt quickly as needs evolve.
+                  </p>
+                </div>
+              </div>
+              <RefreshCcw className="shrink-0 size-12 text-primary mt-20 rounded-full cursor-pointer z-10 hover:scale-130 hover:-rotate-90 transition-all duration-300" />
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Only */}
-      <div className="mt-4 block space-y-10 xl:hidden">
-        {/* First Grid */}
-        <div className=" flex relative items-center gap-4">
-          <div>
-            <div className="absolute w-full px-6 -z-10 pt-2">
-              <ImageWithFallback
-                src="/images/line.png"
-                width={1000}
-                height={1000}
-                fallbackSrc={fallbackImage}
-                alt="wave"
-                className="object-fill w-1 h-full max-h-40 "
-              />
+        {/* Mobile Only */}
+        <div className="mt-4 block space-y-10 xl:hidden">
+          {/* First Grid */}
+          <div className=" flex relative items-center gap-4">
+            <div>
+              <div className="absolute w-full px-6 -z-10 pt-2">
+                <ImageWithFallback
+                  src="/images/line.png"
+                  width={1000}
+                  height={1000}
+                  fallbackSrc={fallbackImage}
+                  alt="wave"
+                  className="object-fill w-1 h-full max-h-40 "
+                />
+              </div>
+              <div className="z-10">
+                <User className="size-14 bg-white text-primary rounded-full" />
+              </div>
             </div>
+            <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+              <div className="flex h-full gap-2">
+                <div className="text-6xl font-jakarta-bold text-violet-300">
+                  1
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                    People
+                  </h3>
+                  <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                    People and teamwork matter most.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Grid */}
+          <div className=" flex relative items-center gap-4 mt-4">
+            <div>
+              <div className="absolute w-full px-6 -z-10 pt-2">
+                <ImageWithFallback
+                  src="/images/line.png"
+                  width={1000}
+                  height={1000}
+                  fallbackSrc={fallbackImage}
+                  alt="wave"
+                  className="object-fill w-1 h-full  max-h-40 "
+                />
+              </div>
+              <div className="z-10">
+                <Package className="size-14 bg-white text-primary rounded-full" />
+              </div>
+            </div>
+            <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+              <div className="flex h-full gap-2">
+                <div className="text-6xl font-jakarta-bold text-violet-300">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                    Product
+                  </h3>
+                  <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                    Deliver functional products faster.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Third Grid */}
+          <div className=" flex relative items-center gap-4 mt-4">
+            <div>
+              <div className="absolute w-full px-6 -z-10 pt-2">
+                <ImageWithFallback
+                  src="/images/line.png"
+                  width={1000}
+                  height={1000}
+                  fallbackSrc={fallbackImage}
+                  alt="wave"
+                  className="object-fill w-1 h-full  max-h-40 "
+                />
+              </div>
+              <div className="z-10">
+                <Handshake className="size-14 bg-white text-primary rounded-full" />
+              </div>
+            </div>
+            <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+              <div className="flex h-full gap-2">
+                <div className="text-6xl font-jakarta-bold text-violet-300">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                    Partnership
+                  </h3>
+                  <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                    Work closely with clients and feedback.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Fourth Grid */}
+          <div className=" flex relative items-center gap-4 mt-4">
             <div className="z-10">
-              <User className="size-14 bg-white text-primary rounded-full" />
+              <RefreshCcw className="size-14 bg-white text-primary rounded-full" />
             </div>
-          </div>
-          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
-            <div className="flex h-full gap-2">
-              <div className="text-6xl font-jakarta-bold text-violet-300">
-                1
-              </div>
-              <div>
-                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
-                  People
-                </h3>
-                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
-                  People and teamwork matter most.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Second Grid */}
-        <div className=" flex relative items-center gap-4 mt-4">
-          <div>
-            <div className="absolute w-full px-6 -z-10 pt-2">
-              <ImageWithFallback
-                src="/images/line.png"
-                width={1000}
-                height={1000}
-                fallbackSrc={fallbackImage}
-                alt="wave"
-                className="object-fill w-1 h-full  max-h-40 "
-              />
-            </div>
-            <div className="z-10">
-              <Package className="size-14 bg-white text-primary rounded-full" />
-            </div>
-          </div>
-          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
-            <div className="flex h-full gap-2">
-              <div className="text-6xl font-jakarta-bold text-violet-300">
-                2
-              </div>
-              <div>
-                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
-                  Product
-                </h3>
-                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
-                  Deliver functional products faster.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Third Grid */}
-        <div className=" flex relative items-center gap-4 mt-4">
-          <div>
-            <div className="absolute w-full px-6 -z-10 pt-2">
-              <ImageWithFallback
-                src="/images/line.png"
-                width={1000}
-                height={1000}
-                fallbackSrc={fallbackImage}
-                alt="wave"
-                className="object-fill w-1 h-full  max-h-40 "
-              />
-            </div>
-            <div className="z-10">
-              <Handshake className="size-14 bg-white text-primary rounded-full" />
-            </div>
-          </div>
-          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
-            <div className="flex h-full gap-2">
-              <div className="text-6xl font-jakarta-bold text-violet-300">
-                3
-              </div>
-              <div>
-                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
-                  Partnership
-                </h3>
-                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
-                  Work closely with clients and feedback.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Fourth Grid */}
-        <div className=" flex relative items-center gap-4 mt-4">
-          <div className="z-10">
-            <RefreshCcw className="size-14 bg-white text-primary rounded-full" />
-          </div>
-          <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
-            <div className="flex h-full gap-2">
-              <div className="text-6xl font-jakarta-bold text-violet-300">
-                4
-              </div>
-              <div>
-                <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
-                  Adaptability
-                </h3>
-                <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
-                  Adapt quickly as needs evolve.
-                </p>
+            <div className="bg-white p-4 border-gray-100 shadow-md max-h-35 rounded-md w-full">
+              <div className="flex h-full gap-2">
+                <div className="text-6xl font-jakarta-bold text-violet-300">
+                  4
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-jakarta-medium text-[#121212] mb-0">
+                    Adaptability
+                  </h3>
+                  <p className="text-[#121212] text-[12px] sm:text-base font-jakarta-regular leading-normal">
+                    Adapt quickly as needs evolve.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
