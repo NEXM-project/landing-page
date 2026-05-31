@@ -17,14 +17,14 @@ export const LocaleSwitcherToggle = () => {
   return (
     <button
       onClick={toggleLocale}
-      className="fixed top-6 right-8 z-40 group  inline-flex items-center justify-center w-12 h-12 rounded-full overflow-hidden bg-linear-to-b from-primary to-violet-900 border border-primary text-white shadow-md hover:shadow-lg cursor-pointer transition-all duration-300"
+      className="fixed top-6 right-8 z-40 group  inline-flex items-center justify-center w-19 h-fit rounded-md overflow-hidden bg-linear-to-b from-primary to-violet-900 border border-primary text-white shadow-md hover:shadow-lg cursor-pointer transition-all duration-300 p-2"
       aria-label="Toggle language"
       title={locale === "en" ? "Switch to Japanese" : "Switch to English"}
     >
       <div className="flex items-center gap-1 relative z-10 group-hover:text-primary transition-colors duration-600">
         <Globe size={18} />
         <span className="text-xs font-semibold">
-          {locale === "en" ? "JP" : "EN"}
+          {locale === "en" ? "日本語" : "EN"}
         </span>
       </div>
       <span
