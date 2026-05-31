@@ -7,6 +7,7 @@ import { HomeFAQ } from "@/components/home/HomeFAQ";
 import { HomeNodiAI } from "@/components/home/HomeNodiAI";
 import { HomeOurTeam } from "@/components/home/HomeOurTeam";
 import { HomeProjectCycle } from "@/components/home/HomeProjectCycle";
+import { HomeReview } from "@/components/home/HomeReview";
 import { LeadershipIntro } from "@/components/home/LeadershipIntro";
 import { useTranslations } from "next-intl";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <HomeEngineeringExcellence />
       <FeaturedProjects />
       <HomeProjectCycle />
+      <HomeReview />
       <HomeFAQ />
       <HomeContactUs />
     </>
