@@ -17,7 +17,7 @@ export const LocaleSwitcherToggle = () => {
   return (
     <button
       onClick={toggleLocale}
-      className="fixed top-6 right-8 z-40 group  inline-flex items-center justify-center w-19 h-fit rounded-md overflow-hidden bg-linear-to-b from-primary to-violet-900 border border-primary text-white shadow-md hover:shadow-lg cursor-pointer transition-all duration-300 p-2"
+      className="fixed top-6 md:top-28 xl:top-6 right-8 z-40 group  inline-flex items-center justify-center w-19 h-fit rounded-md overflow-hidden bg-linear-to-b from-primary to-violet-900 border border-primary text-white shadow-md hover:shadow-lg cursor-pointer transition-all duration-300 p-2"
       aria-label="Toggle language"
       title={locale === "en" ? "Switch to Japanese" : "Switch to English"}
     >
