@@ -10,7 +10,15 @@ import {
   MessageSquare,
   Puzzle,
   RefreshCw,
+  ShieldCheck,
   Wrench,
+  PenTool,
+  Smartphone,
+  Monitor,
+  SearchCheck,
+  Palette,
+  Target,
+  Megaphone,
 } from "lucide-react";
 import { motion } from "motion/react";
 import SplitText from "../SplitText";
@@ -170,14 +178,18 @@ export const HomeEngineeringExcellence = () => {
             <div className="lg:col-span-3 flex lg:flex-row flex-col gap-4 justify-between">
               <div className="lg:max-w-96">
                 <div className="flex items-center gap-2">
-                  <Bot color="#6d28d9" size={32} className="-translate-y-0.5" />
+                  <ShieldCheck
+                    color="#6d28d9"
+                    size={32}
+                    className="-translate-y-0.5"
+                  />
                   <h3 className="text-lg md:text-xl lg:text-2xl">
-                    AI & SaaS Development
+                    Maintenance & Support
                   </h3>
                 </div>
                 <p className="my-4 mb-8 text-sm lg:text-base">
-                  Streamline your workflows with custom internal software and
-                  automated processes.
+                  Ensuring long-term stability and performance for enterprise
+                  systems.
                 </p>
               </div>
               <motion.div
@@ -197,6 +209,80 @@ export const HomeEngineeringExcellence = () => {
                 <div className="bg-gray-100 flex flex-col items-center justify-center gap-2 px-2">
                   <Logs color="#6d28d9" />
                   <p>QA Automation</p>
+                </div>
+              </motion.div>
+            </div>
+            {/* UI/UX Design */}
+            <div className="lg:col-span-3 flex lg:flex-row flex-col gap-4 justify-between bg-zorgit/20">
+              <div className="lg:max-w-96">
+                <div className="flex items-center gap-2">
+                  <PenTool
+                    color="#6d28d9"
+                    size={32}
+                    className="-translate-y-0.5"
+                  />
+                  <h3 className="text-lg md:text-xl lg:text-2xl">
+                    UI/UX Design
+                  </h3>
+                </div>
+                <p className="my-4 mb-8 text-sm lg:text-base">
+                  Crafting beautiful interfaces that engage users and elevate
+                  your brand.
+                </p>
+              </div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4 *:w-43   *:py-4"
+              >
+                <div className="bg-zorgit/70 flex flex-col items-center px-2 justify-center gap-2">
+                  <Smartphone color="#6d28d9" className="" />
+                  <p className="">Mobile App Design</p>
+                </div>
+                <div className="bg-zorgit/70 flex flex-col items-center justify-center gap-2 px-2">
+                  <Monitor color="#6d28d9" />
+                  <p>Web & SaaS Design</p>
+                </div>
+                <div className="bg-zorgit/70 flex flex-col items-center justify-center gap-2 px-2">
+                  <SearchCheck color="#6d28d9" />
+                  <p>UX Audit</p>
+                </div>
+              </motion.div>
+            </div>
+            {/* Branding */}
+            <div className="lg:col-span-3 flex lg:flex-row flex-col gap-4 justify-between bg-zorgit/20">
+              <div className="lg:max-w-96">
+                <div className="flex items-center gap-2">
+                  <Palette
+                    color="#6d28d9"
+                    size={32}
+                    className="-translate-y-0.5"
+                  />
+                  <h3 className="text-lg md:text-xl lg:text-2xl">Branding</h3>
+                </div>
+                <p className="my-4 mb-8 text-sm lg:text-base">
+                  Establishing a cohesive brand identity and strategy to stand
+                  out in the market.
+                </p>
+              </div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4 *:w-43   *:py-4"
+              >
+                <div className="bg-zorgit/70 flex flex-col items-center px-2 justify-center gap-2">
+                  <Target color="#6d28d9" className="" />
+                  <p className="text-center">Brand Strategy</p>
+                </div>
+                <div className="bg-zorgit/70 flex flex-col items-center justify-center gap-2 px-2">
+                  <Palette color="#6d28d9" />
+                  <p className="text-center">Logo & Guidelines</p>
+                </div>
+                <div className="bg-zorgit/70 flex flex-col items-center justify-center gap-2 px-2">
+                  <Megaphone color="#6d28d9" />
+                  <p className="text-center">Marketing Materials</p>
                 </div>
               </motion.div>
             </div>
