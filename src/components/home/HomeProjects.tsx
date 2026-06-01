@@ -52,7 +52,7 @@ const projectCard = (project: Project) => {
 
 export const HomeProjects = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4">
+    <section className="max-w-7xl mx-auto px-4 py-20">
       <div>
         <h2 className="text-5xl font-semibold text-center mb-8">
           Our Projects
