@@ -22,7 +22,7 @@ const projectCard = (project: Project) => {
           </div>
           <h3 className="text-lg font-semibold text-white">{project.name}</h3>
           {/* description */}
-          <div className="md:overflow-hidden md:max-h-0 md:opacity-0 md:group-hover:max-h-40 md:group-hover:opacity-100 md:transition-all md:duration-500 md:ease-in-out">
+          <div className="lg:overflow-hidden lg:max-h-0 lg:opacity-0 lg:group-hover:max-h-40 lg:group-hover:opacity-100 lg:transition-all lg:duration-500 lg:ease-in-out">
             <p className="text-sm text-gray-200 mt-2 text-justify">
               {project.description}
             </p>
@@ -41,7 +41,7 @@ const projectCard = (project: Project) => {
         </div>
         {/* <div className="bg-black/50 w-full h-full absolute inset-0 z-5"></div> */}
         {/* <div className="absolute inset-0 z-6 bg-linear-to-t from-black to-transparent pointer-events-none"></div> */}
-        <div className="absolute inset-0 z-6 pointer-events-none bg-black/90 md:bg-transparent md:bg-linear-to-t md:from-black md:to-transparent"></div>
+        <div className="absolute inset-0 z-6 pointer-events-none bg-black/90 lg:bg-transparent lg:bg-linear-to-t lg:from-black lg:to-transparent"></div>
         <Image
           src={project.image}
           alt={project.name}
