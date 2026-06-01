@@ -38,7 +38,7 @@ const projectCard = (project: Project) => {
           </div>
         </div>
         {/* <div className="bg-black/50 w-full h-full absolute inset-0 z-5"></div> */}
-        <div className="absolute inset-0 z-6 bg-linear-to-t from-black/90 to-transparent pointer-events-none"></div>
+        <div className="absolute inset-0 z-6 bg-linear-to-t from-black to-transparent pointer-events-none"></div>
         <Image
           src={project.image}
           alt={project.name}

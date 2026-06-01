@@ -1,44 +1,44 @@
 [
   {
-    "name": "E-Commerce Platform Redesign",
+    "name": "Investment Property ROI Tracker",
     "date": "Oct 12, 2025",
-    "description": "A complete overhaul of the shopping experience, resulting in a 40% increase in user engagement and seamless checkout flows.",
-    "tags": ["React", "Next.js", "Tailwind CSS", "Stripe"],
+    "description": "This project highlights an Investment Property ROI Tracker Dashboard — a real estate analytics UI designed for investors, property funds, and agencies to monitor returns with clarity and precision.",
+    "tags": [],
     "image": "/images/projects/project1.webp"
   },
   {
-    "name": "Analytics Dashboard",
+    "name": "Property Discovery App",
     "date": "Jun 04, 2025",
-    "description": "Built a real-time data visualization dashboard capable of processing millions of events per minute with sub-second latency.",
-    "tags": ["TypeScript", "Vue", "D3.js", "Node.js"],
+    "description": "An intuitive mobile app design that helps users explore properties through 3D tours, floor plans, and guided walkthroughs. Built to reduce decision time and increase buyer confidence.",
+    "tags": [],
     "image": "/images/projects/project2.webp"
   },
   {
-    "name": "Mobile Banking App",
+    "name": "Villa Website",
     "date": "Nov 18, 2024",
-    "description": "Developed a secure and accessible mobile banking application used by over 100,000 customers daily.",
-    "tags": ["React Native", "GraphQL", "AWS"],
+    "description": "A complete landing page concept that blends lifestyle storytelling with clear user touchpoints — from luxury highlights to resident testimonials and quick FAQs. Designed to inspire trust and make decision-making effortless.",
+    "tags": [],
     "image": "/images/projects/project3.webp"
   },
   {
-    "name": "AI Content Generator",
+    "name": "Commercial Property Marketplace",
     "date": "Feb 28, 2026",
-    "description": "Integrated large language models into a custom CMS to automate and enhance content creation workflows.",
-    "tags": ["Python", "FastAPI", "OpenAI", "React"],
+    "description": "This design highlights the Featured Listings & Agency-Backed Section of a Commercial Property Marketplace platform.",
+    "tags": [],
     "image": "/images/projects/project4.webp"
   },
   {
-    "name": "Healthcare Provider Portal",
+    "name": "Dubai Real Estate Website",
     "date": "Aug 22, 2025",
-    "description": "Designed a HIPAA-compliant portal for healthcare providers to seamlessly manage patient records and appointments.",
-    "tags": ["React", "Go", "PostgreSQL", "Docker"],
+    "description": "We designed this luxury interior & real estate landing page for a Dubai-based brand that needed to attract high-net-worth clients. We focused on premium typography, golden accents, and a timeless layout that blends elegance with functionality.",
+    "tags": [],
     "image": "/images/projects/project5.webp"
   },
   {
-    "name": "Smart Home IoT Controller",
+    "name": "Gym Web",
     "date": "Jan 15, 2026",
-    "description": "A centralized hub app for controlling and automating various smart home devices across multiple protocols.",
-    "tags": ["Flutter", "Rust", "MQTT", "Firebase"],
+    "description": "We prioritized a sleek, modern design that's both visually striking and remarkably simple to use. We aimed to create an experience with bold imagery and clear calls to action, guiding visitors effortlessly through class schedules, membership details, trainer profiles, and more. ",
+    "tags": [],
     "image": "/images/projects/project6.webp"
   }
 ]
