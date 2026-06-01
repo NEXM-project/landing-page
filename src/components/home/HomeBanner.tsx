@@ -77,7 +77,7 @@ export const HomeBanner = () => {
             </div>
           </div>
 
-          <div className="relative w-full lg:w-1/2 flex items-center justify-center min-h-75 lg:min-h-100 z-10">
+          <div className="relative mt-20 lg:mt-0 w-full lg:w-1/2 flex items-center justify-center min-h-75 lg:min-h-100 z-10">
             {/* Background glowing rings */}
             <motion.div
               className="absolute w-62.5 h-62.5 md:w-[320px] md:h-80 rounded-full border-2 border-dashed border-primary/20"

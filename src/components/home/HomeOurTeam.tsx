@@ -4,6 +4,7 @@ import { TeamCarousel } from "./TeamCarousel";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/transition";
 import SplitText from "../SplitText";
+import { FocusCards } from "../ui/focus-cards";
 
 interface TechStack {
   src: string;
@@ -15,6 +16,7 @@ interface TeamMember {
   alt: string;
   description: string;
   techStacks: TechStack[];
+  imagePosition?: string;
 }
 
 export const HomeOurTeam = () => {
@@ -71,7 +73,10 @@ export const HomeOurTeam = () => {
             <p className="text-gray-600">Loading team members...</p>
           </div>
         ) : (
-          <TeamCarousel teamMembers={teamMembers} />
+          // <TeamCarousel teamMembers={teamMembers} />
+          <div className="my-10">
+            <FocusCards cards={teamMembers} />
+          </div>
         )}
       </div>
     </motion.div>
