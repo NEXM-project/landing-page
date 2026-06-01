@@ -200,7 +200,7 @@ export const HomeEngineeringExcellence = () => {
               >
                 <div className="bg-gray-100 flex flex-col items-center px-2 justify-center gap-2">
                   <RefreshCw color="#6d28d9" className="" />
-                  <p className="">Ongoing Maintenance</p>
+                  <p className="text-center">Ongoing Maintenance</p>
                 </div>
                 <div className="bg-gray-100 flex flex-col items-center justify-center gap-2 px-2">
                   <Bug color="#6d28d9" />
@@ -234,7 +234,7 @@ export const HomeEngineeringExcellence = () => {
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeInUp}
-                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4 *:w-43   *:py-4"
+                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4 *:xl:min-w-43  *:py-4"
               >
                 <div className="bg-zorgit/70 flex flex-col items-center px-2 justify-center gap-2">
                   <Smartphone color="#6d28d9" className="" />
@@ -270,7 +270,7 @@ export const HomeEngineeringExcellence = () => {
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeInUp}
-                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4 *:w-43   *:py-4"
+                className="grid lg:grid-cols-3 text-sm grid-cols-1 *:h-full *:rounded-md gap-4 *:xl:min-w-43  *:py-4"
               >
                 <div className="bg-zorgit/70 flex flex-col items-center px-2 justify-center gap-2">
                   <Target color="#6d28d9" className="" />
