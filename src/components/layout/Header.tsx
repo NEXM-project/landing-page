@@ -1,17 +1,17 @@
 "use client";
 
-import { LocaleSwitcherSelect } from "@/components/layout/LocaleSwitcherSelect";
 import {
   Sheet,
   SheetContent,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Bluetooth, Hexagon, Menu } from "lucide-react";
+import { Hexagon, Menu } from "lucide-react";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LocaleSwitcherMobile } from "./LocaleSwitcherMobile";
 
 const navigationLinks = [
   { href: "#", label: "Services" },
@@ -28,8 +28,8 @@ export const Header = () => {
   const isActive = (href: string) => pathname === href;
 
   return (
-    // <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:max-w-4xl xl:max-w-7xl px-4">
-    <header className="mx-auto w-full z-50 md:max-w-4xl xl:max-w-7xl px-4 absolute top-6 left-1/2 transform -translate-x-1/2">
+    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:max-w-4xl xl:max-w-7xl px-4">
+      {/* <header className="mx-auto w-full z-50 md:max-w-4xl xl:max-w-7xl px-4 absolute top-6 left-1/2 transform -translate-x-1/2"> */}
       <div className="backdrop-blue-md bg-white border border-black/20 rounded-lg px-8 sm:px-10 md:px-12 py-4 flex items-center justify-between gap-4">
         <div className="flex gap-2 items-center">
           <Hexagon className="fill-primary text-white" />
@@ -96,6 +96,7 @@ export const Header = () => {
                   defaultValue={locale}
                   label="Change language"
                 /> */}
+                <LocaleSwitcherMobile />
               </div>
             </div>
           </SheetContent>

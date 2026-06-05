@@ -19,7 +19,7 @@ export const HomeBanner = () => {
           )}
         />
         <div className="absolute z-10 bg-linear-to-t lg:bg-linear-to-bottom from-white to-transparent w-full h-full lg:h-[150%]"></div>
-        <div className="xl:max-w-7xl w-full relative flex flex-col-reverse lg:flex-row gap-4 lg:gap-8 mx-auto px-4 lg:px-0 min-h-[60vh] z-20 mt-10 lg:mt-48 mb-10 lg:mb-20 ">
+        <div className="xl:max-w-7xl w-full relative flex flex-col-reverse lg:flex-row gap-4 lg:gap-8 mx-auto px-4 xl:px-0 min-h-[60vh] z-20 mt-10 lg:mt-48 mb-10 lg:mb-20 ">
           <div className="w-full lg:w-1/2 flex flex-col justify-center relative z-10">
             <div className="flex flex-col items-left justify-center w-full">
               <BlurText
