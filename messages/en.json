@@ -6,16 +6,22 @@
     },
     "faq": {
       "heading": "Frequently Asked Questions",
-      "q1": "What software engineering services do you offer?",
-      "a1": "We provide comprehensive end-to-end software development services, including custom web and mobile applications, UI/UX design, cloud architecture, and legacy system modernization.",
-      "q2": "What does your typical project development cycle look like?",
-      "a2": "Our approach is rooted in agile methodologies. We begin with a discovery and planning phase, followed by iterative development, rigorous QA testing, seamless deployment, and post-launch support.",
-      "q3": "How do you ensure engineering excellence and code quality?",
-      "a3": "We maintain high standards through automated testing, continuous integration and delivery (CI/CD), mandatory peer code reviews, and strict adherence to industry best practices and security standards.",
-      "q4": "Do you work primarily with startups or enterprise clients?",
-      "a4": "We partner with businesses of all sizes. We help startups build rapid Minimum Viable Products (MVPs) and assist enterprises in scaling complex, high-performance software solutions.",
-      "q5": "How can we start a project with your team?",
-      "a5": "Getting started is easy. Simply reach out through our contact section to schedule an initial consultation. We'll discuss your specific requirements, technical feasibility, and propose a tailored roadmap."
+      "q1": "Can you support Japanese communication?",
+      "a1": "Yes. Our Japan-side team has native Japanese nationals who can support client communication, planning, and project discussions.",
+      "q2": "Do you work with companies in Japan?",
+      "a2": "Yes. NexM is based in Japan and supports businesses that need websites, software, AI tools, and digital support.",
+      "q3": "Where is your development team located?",
+      "a3": "Our engineering team is Japan, Bangladesh and globally. This helps us provide flexible and cost-effective development support.",
+      "q4": "What services do you offer?",
+      "a4": "We build websites, software, dashboards, business systems, UI/UX designs, branding materials, and AI automation tools.",
+      "q5": "Can you help us use Nodi AI?",
+      "a5": "Yes. We can help you set up Nodi AI for customer replies, lead management, quotations, meeting booking, and sales automation.",
+      "q6": "Can we start with a small project first?",
+      "a6": "Yes. You can start with a website, landing page, UX audit, or small automation project before building a larger system.",
+      "q7": "How do you manage quality with a remote team?",
+      "a7": "We use clear planning, regular updates, design approval, testing, and post-launch support to keep the project organized.",
+      "q8": "Do you provide support after launch?",
+      "a8": "Yes. We can help with updates, bug fixes, performance improvement, and future feature development."
     }
   }
 }
