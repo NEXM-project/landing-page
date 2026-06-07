@@ -1,12 +1,19 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 // Form Schema
 const contactFormSchema = z.object({
@@ -14,7 +21,9 @@ const contactFormSchema = z.object({
     .string()
     .min(2, { message: "Name must be at least 2 characters" })
     .max(50),
+  companyName: z.string().optional(),
   email: z.email({ message: "Please enter a valid email address" }),
+  projectType: z.string().min(1, { message: "Please select a project type" }),
   message: z
     .string()
     .min(10, { message: "Message must be at least 10 characters" })
@@ -28,6 +37,7 @@ export const HomeContactUsForm = () => {
     register,
     handleSubmit,
     reset,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormInputs>({
     resolver: zodResolver(contactFormSchema),
@@ -75,6 +85,21 @@ export const HomeContactUsForm = () => {
             )}
           </div>
           <div>
+            <Label htmlFor="companyName">Company Name</Label>
+            <Input
+              id="companyName"
+              placeholder="Enter your company name"
+              {...register("companyName")}
+              aria-invalid={errors.companyName ? "true" : "false"}
+              className="my-2 rounded-md"
+            />
+            {errors.companyName && (
+              <p className="text-sm text-destructive">
+                {errors.companyName.message}
+              </p>
+            )}
+          </div>
+          <div>
             <Label htmlFor="email">Email</Label>
             <Input
               id="email"
@@ -85,6 +110,45 @@ export const HomeContactUsForm = () => {
             />
             {errors.email && (
               <p className="text-sm text-destructive">{errors.email.message}</p>
+            )}
+          </div>
+          <div>
+            <Label htmlFor="projectType">Project Type</Label>
+            <Controller
+              control={control}
+              name="projectType"
+              render={({ field }) => (
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
+                  <SelectTrigger className="my-2 w-full rounded-md h-[42px] px-3 border border-input">
+                    <SelectValue placeholder="Select project type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Website Development">
+                      Website Development
+                    </SelectItem>
+                    <SelectItem value="Software Development">
+                      Software Development
+                    </SelectItem>
+                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
+                    <SelectItem value="AI Automation / Nodi AI">
+                      AI Automation / Nodi AI
+                    </SelectItem>
+                    <SelectItem value="Branding">Branding</SelectItem>
+                    <SelectItem value="Maintenance & Support">
+                      Maintenance & Support
+                    </SelectItem>
+                    <SelectItem value="Not sure yet">Not sure yet</SelectItem>
+                  </SelectContent>
+                </Select>
+              )}
+            />
+            {errors.projectType && (
+              <p className="text-sm text-destructive">
+                {errors.projectType.message}
+              </p>
             )}
           </div>
         </div>
