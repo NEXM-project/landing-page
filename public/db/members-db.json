@@ -2,166 +2,58 @@
   {
     "id": 1,
     "name": "Shuto Tanigawa",
+    "designation": "Co-Founder & CEO /Japan Business Strategy",
+    "address": "Tokyo, Japan",
     "image": "/images/our-team/shuto.png",
     "alt": "Shuto Tanigawa",
-    "description": "Background in global AI product environments, now focused on helping businesses improve workflows through automation and technology solutions.",
-    "techStacks": [
-      {
-        "src": "/images/tech-stack/react.png"
-      },
-      {
-        "src": "/images/tech-stack/nextjs.png"
-      },
-      {
-        "src": "/images/tech-stack/typescript.png"
-      },
-      {
-        "src": "/images/tech-stack/tailwind.png"
-      },
-      {
-        "src": "/images/tech-stack/shadcnui.png"
-      },
-      {
-        "src": "/images/tech-stack/zustand.png"
-      }
-    ]
+    "description": "Supports client communication, local strategy, and Japan-side business development."
   },
   {
     "id": 2,
     "name": "Md. Yeasin Biplob",
+    "designation": "Cyber Security Head",
+    "address": "University of Tokyo, Japan",
     "image": "/images/our-team/biplob.png",
     "alt": "Md. Yeasin Biplob",
-    "description": "Cyber security lab member at university of tokyo.",
-    "techStacks": [
-      {
-        "src": "/images/tech-stack/react.png"
-      },
-      {
-        "src": "/images/tech-stack/nextjs.png"
-      },
-      {
-        "src": "/images/tech-stack/typescript.png"
-      },
-      {
-        "src": "/images/tech-stack/tailwind.png"
-      },
-      {
-        "src": "/images/tech-stack/shadcnui.png"
-      },
-      {
-        "src": "/images/tech-stack/zustand.png"
-      }
-    ]
+    "description": "Security architecture and system integrity of web applications, and backend systems."
   },
   {
     "id": 3,
-    "name": "Mahedi Hasan Rafin",
+    "name": "Mahedi Hassan Rafin",
+    "designation": "Back-End Developer",
+    "address": "Dhaka, Bangladesh",
     "image": "/images/our-team/rafin.png",
-    "alt": "Mahedi Hasan Rafin",
-    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
-    "techStacks": [
-      {
-        "src": "/images/tech-stack/python.png"
-      },
-      {
-        "src": "/images/tech-stack/django.png"
-      },
-      {
-        "src": "/images/tech-stack/postgresql.png"
-      },
-      {
-        "src": "/images/tech-stack/github.png"
-      },
-      {
-        "src": "/images/tech-stack/aws.png"
-      },
-      {
-        "src": "/images/tech-stack/redis.png"
-      }
-    ]
+    "alt": "Mahedi Hassan Rafin",
+    "description": "Relentless back-end Developer experienced in developing scalable, high-performance web applications using Python technologies."
   },
   {
     "id": 4,
     "name": "Tanvir Hasan Serazy",
+    "designation": "Front-End Developer",
+    "address": "Dhaka, Bangladesh",
     "image": "/images/our-team/serazy.png",
     "imagePosition": "object-center",
     "alt": "Tanvir Hasan Serazy",
-    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
-    "techStacks": [
-      {
-        "src": "/images/tech-stack/react.png"
-      },
-      {
-        "src": "/images/tech-stack/nextjs.png"
-      },
-      {
-        "src": "/images/tech-stack/typescript.png"
-      },
-      {
-        "src": "/images/tech-stack/tailwind.png"
-      },
-      {
-        "src": "/images/tech-stack/shadcnui.png"
-      },
-      {
-        "src": "/images/tech-stack/zustand.png"
-      }
-    ]
+    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization."
   },
   {
     "id": 5,
     "name": "Kawsaruzzaman Muhammad",
+    "designation": "Business Development Officer",
+    "address": "Tokyo, Japan",
     "imagePosition": "object-center",
     "image": "/images/our-team/kawsar.png",
     "alt": "Kawsaruzzaman Muhammad",
-    "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
-    "techStacks": [
-      {
-        "src": "/images/tech-stack/react.png"
-      },
-      {
-        "src": "/images/tech-stack/nextjs.png"
-      },
-      {
-        "src": "/images/tech-stack/typescript.png"
-      },
-      {
-        "src": "/images/tech-stack/tailwind.png"
-      },
-      {
-        "src": "/images/tech-stack/shadcnui.png"
-      },
-      {
-        "src": "/images/tech-stack/zustand.png"
-      }
-    ]
+    "description": "Spearheading global partnerships and driving next-generation IT solutions across international markets."
   },
   {
     "id": 6,
     "name": "Arz Fahim",
+    "designation": "Founder & Head of Global Affairs",
+    "address": "Tokyo, Japan",
     "imagePosition": "object-center",
     "image": "/images/our-team/fahim.png",
     "alt": "Arz Fahim",
-    "description": "Founder NexM",
-    "techStacks": [
-      {
-        "src": "/images/tech-stack/react.png"
-      },
-      {
-        "src": "/images/tech-stack/nextjs.png"
-      },
-      {
-        "src": "/images/tech-stack/typescript.png"
-      },
-      {
-        "src": "/images/tech-stack/tailwind.png"
-      },
-      {
-        "src": "/images/tech-stack/shadcnui.png"
-      },
-      {
-        "src": "/images/tech-stack/zustand.png"
-      }
-    ]
+    "description": "Connects Japanese clients with the engineering team and manages project & company direction."
   }
 ]

@@ -9,6 +9,8 @@ export type CardType = {
   image: string;
   imagePosition?: string;
   description?: string;
+  designation?: string;
+  address?: string;
 };
 
 export const Card = React.memo(
@@ -43,11 +45,23 @@ export const Card = React.memo(
       <div className="absolute inset-0 bg-black/50 flex items-end py-8 px-4 pointer-events-none">
         <div
           className={cn(
-            "text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-200 transition-opacity duration-300",
+            "transition-opacity duration-300",
             hovered === index ? "opacity-0" : "opacity-100",
           )}
         >
-          {card.name}
+          <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-200">
+            {card.name}
+          </div>
+          {card.designation && (
+            <div className="text-sm md:text-base text-neutral-300 mt-1">
+              {card.designation}
+            </div>
+          )}
+          {card.address && (
+            <div className="text-xs md:text-sm text-neutral-300 mt-1">
+              {card.address}
+            </div>
+          )}
         </div>
       </div>
       <div

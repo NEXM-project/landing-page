@@ -1,43 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
-import { TeamCarousel } from "./TeamCarousel";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/transition";
 import SplitText from "../SplitText";
 import { FocusCards } from "../ui/focus-cards";
-
-interface TechStack {
-  src: string;
-}
-
-interface TeamMember {
-  name: string;
-  image: string;
-  alt: string;
-  description: string;
-  techStacks: TechStack[];
-  imagePosition?: string;
-}
+import { useTranslations } from "next-intl";
 
 export const HomeOurTeam = () => {
-  const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchTeamMembers = async () => {
-      try {
-        const response = await fetch("/db/members-db.json");
-        const data = await response.json();
-        setTeamMembers(data);
-      } catch (error) {
-        console.error("Failed to load team members:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchTeamMembers();
-  }, []);
+  const t = useTranslations("homepage.team");
 
   return (
     <motion.div
@@ -49,7 +18,7 @@ export const HomeOurTeam = () => {
       <div>
         <div className="flex flex-col items-center justify-center">
           <SplitText
-            text="THE MINDS BEHIND THE SOFTWARE"
+            text={t("heading")}
             className="text-base md:text-lg text-primary lg:text-xl font-semibold text-center"
             delay={10}
             duration={1.25}
@@ -61,23 +30,23 @@ export const HomeOurTeam = () => {
             rootMargin="-100px"
             textAlign="center"
           />
-          {/* <p className="text-base text-primary lg:text-xl font-semibold text-center">
-          THE MINDS BEHIND THE SOFTWARE.
-        </p> */}
           <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mt-4">
-            Our Team
+            {t("title")}
           </h3>
         </div>
-        {loading ? (
-          <div className="flex justify-center items-center py-20">
-            <p className="text-gray-600">Loading team members...</p>
-          </div>
-        ) : (
-          // <TeamCarousel teamMembers={teamMembers} />
-          <div className="my-10">
-            <FocusCards cards={teamMembers} />
-          </div>
-        )}
+        <div className="my-10">
+          <FocusCards
+            cards={t.raw("members").map((member: any) => ({
+              name: member.name,
+              designation: member.designation,
+              address: member.address,
+              image: `/images/our-team/${member.imageFile}.png`,
+              imagePosition:
+                member.imagePosition || "object-cover md:object-top",
+              description: member.description,
+            }))}
+          />
+        </div>
       </div>
     </motion.div>
   );

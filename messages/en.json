@@ -22,6 +22,63 @@
       "a7": "We use clear planning, regular updates, design approval, testing, and post-launch support to keep the project organized.",
       "q8": "Do you provide support after launch?",
       "a8": "Yes. We can help with updates, bug fixes, performance improvement, and future feature development."
+    },
+    "team": {
+      "heading": "THE MINDS BEHIND THE SOFTWARE",
+      "title": "Meet your 24x7 Team",
+      "members": [
+        {
+          "id": 1,
+          "name": "Shuto Tanigawa",
+          "designation": "Co-Founder & CEO / Japan Business Strategy",
+          "address": "Tokyo, Japan",
+          "description": "Supports client communication, local strategy, and Japan-side business development.",
+          "imageFile": "shuto"
+        },
+        {
+          "id": 2,
+          "name": "Md. Yeasin Biplob",
+          "designation": "Cyber Security Head",
+          "address": "University of Tokyo, Japan",
+          "description": "Security architecture and system integrity of web applications, and backend systems.",
+          "imageFile": "biplob"
+        },
+        {
+          "id": 3,
+          "name": "Mahedi Hassan Rafin",
+          "designation": "Back-End Developer",
+          "address": "Dhaka, Bangladesh",
+          "description": "Relentless back-end Developer experienced in developing scalable, high-performance web applications using Python technologies.",
+          "imageFile": "rafin"
+        },
+        {
+          "id": 4,
+          "name": "Tanvir Hasan Serazy",
+          "designation": "Front-End Developer",
+          "address": "Dhaka, Bangladesh",
+          "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
+          "imageFile": "serazy",
+          "imagePosition": "object-center"
+        },
+        {
+          "id": 5,
+          "name": "Kawsaruzzaman Muhammad",
+          "designation": "Business Development Officer",
+          "address": "Tokyo, Japan",
+          "description": "Spearheading global partnerships and driving next-generation IT solutions across international markets.",
+          "imageFile": "kawsar",
+          "imagePosition": "object-center"
+        },
+        {
+          "id": 6,
+          "name": "Arz Fahim",
+          "designation": "Founder & Head of Global Affairs",
+          "address": "Tokyo, Japan",
+          "description": "Connects Japanese clients with the engineering team and manages project & company direction.",
+          "imageFile": "fahim",
+          "imagePosition": "object-center"
+        }
+      ]
     }
   }
 }
