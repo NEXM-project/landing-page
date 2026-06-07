@@ -47,5 +47,19 @@
     "description": "Interior Design · Website Design & Development · Result: Improved website traffic and inquiries.",
     "tags": [],
     "image": "/images/projects/project7.webp"
+  },
+  {
+    "name":"Moon Hospital",
+    "date": "May 05, 2025",
+    "description": "Healthcare · Branding, UI/UX, Website Development · Result: Improved appointment flow and patient trust.",
+    "tags": [],
+    "image": "/images/projects/project8.png"
+  },
+  {
+    "name": "Pet Adoption App",
+    "date": "Sep 30, 2025",
+    "description": "This project highlights a Pet Adoption App that connects potential pet owners with shelters and fosters a community of animal lovers. The app features intuitive navigation, detailed pet profiles, and a seamless adoption process, making it easier for users to find their perfect furry companion.",
+    "tags": [],
+    "image": "/images/projects/project9.webp"
   }
 ]
