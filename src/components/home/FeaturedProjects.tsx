@@ -4,7 +4,7 @@ import { fadeInUp } from "@/utils/transition";
 import { LogoLoop } from "../LogoLoop";
 import SplitText from "../SplitText";
 
-const imageLogos = [
+const imageLogos1 = [
   {
     src: "/images/client-projects-logo/nextpage.png",
     alt: "Company 1",
@@ -25,7 +25,63 @@ const imageLogos = [
     src: "/images/client-projects-logo/sundarban.png",
     alt: "Company 5",
   },
+  {
+    src: "/images/client-projects-logo/ecogen.png",
+    alt: "Company 6",
+  },
+  {
+    src: "/images/client-projects-logo/extol.png",
+    alt: "Company 7",
+  },
+  {
+    src: "/images/client-projects-logo/fancy-traveler.png",
+    alt: "Company 8",
+  },
+  {
+    src: "/images/client-projects-logo/mixit.png",
+    alt: "Company 9",
+  },
 ];
+
+const imageLogos2 = [
+  {
+    src: "/images/client-projects-logo/moon.png",
+    alt: "Company 1",
+  },
+  {
+    src: "/images/client-projects-logo/move.png",
+    alt: "Company 2",
+  },
+  {
+    src: "/images/client-projects-logo/muslink.png",
+    alt: "Company 3",
+  },
+  {
+    src: "/images/client-projects-logo/zeerow.png",
+    alt: "Company 4",
+  },
+  {
+    src: "/images/client-projects-logo/projectify.png",
+    alt: "Company 5",
+  },
+  {
+    src: "/images/client-projects-logo/qazada.png",
+    alt: "Company 6",
+  },
+  {
+    src: "/images/client-projects-logo/s.png",
+    alt: "Company 7",
+  },
+  {
+    src: "/images/client-projects-logo/snm.png",
+    alt: "Company 8",
+  },
+  {
+    src: "/images/client-projects-logo/wish.png",
+    alt: "Company 9",
+  },
+];
+
 export const FeaturedProjects = () => {
   return (
     <>
@@ -41,7 +97,7 @@ export const FeaturedProjects = () => {
 
         <div className="text-center pt-4 mb-6 ">
           <SplitText
-            text="Featured Client Projects"
+            text="Industries Our Team Have Worked With"
             className="max-w-7xl mx-auto text-3xl lg:text-5xl font-semibold text-center lg:min-h-16"
             delay={10}
             duration={1.25}
@@ -59,10 +115,22 @@ export const FeaturedProjects = () => {
         </h2> */}
         <div className="pt-4 lg:pt-8">
           <LogoLoop
-            logos={imageLogos}
-            speed={90}
+            logos={imageLogos1}
+            speed={80}
             direction="left"
-            logoHeight={90}
+            logoHeight={80}
+            gap={60}
+            hoverSpeed={0}
+            scaleOnHover
+            fadeOut
+            fadeOutColor="#ffffff"
+            ariaLabel="Technology partners"
+          />
+          <LogoLoop
+            logos={imageLogos2}
+            speed={80}
+            direction="right"
+            logoHeight={80}
             gap={60}
             hoverSpeed={0}
             scaleOnHover

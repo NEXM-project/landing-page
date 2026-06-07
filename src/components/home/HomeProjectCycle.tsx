@@ -14,7 +14,36 @@ export const HomeProjectCycle = () => {
       whileInView="visible"
       variants={fadeInUp}
     >
+      <div className="text-center pb-10">
+        <SplitText
+          text={`How the Team Works`}
+          className="text-2xl lg:text-5xl font-semibold text-center"
+          delay={10}
+          duration={1.25}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-4 ">
+        <ImageWithFallback
+          src="/images/project-cycle.png"
+          height={1000}
+          width={1400}
+          alt="Project Cycle"
+          className="object-cover w-full h-full lg:h-full"
+        />
+      </div>
+    </motion.section>
+  );
+};
+
+{
+  /* <div className="max-w-7xl mx-auto px-4 ">
         <div className="pb-10">
           <div className="text-center">
             <SplitText
@@ -33,18 +62,28 @@ export const HomeProjectCycle = () => {
           </div>
           {/* <h1 className="text-2xl lg:text-4xl font-semibold text-center">
           Flexible Process. Scalable Solutions.
-        </h1> */}
-          <p className="text-base lg:text-xl mt-4 text-center max-w-3xl mx-auto">
+        </h1> */
+}
+{
+  /* <p className="text-base lg:text-xl mt-4 text-center max-w-3xl mx-auto">
             Our agile approach enables faster delivery, better collaboration,
             and continuous refinement—ensuring every product is built to grow
             with your vision.
           </p>
-        </div>
+        </div> */
+}
 
-        {/* Desktop Only */}
-        <div className="mt-16 hidden xl:block relative">
-          {/* Add any additional content or components for the project cycle section here */}
-          <div className="w-full absolute min-h-40 px-4 pt-10">
+{
+  /* Desktop Only */
+}
+{
+  /* <div className="mt-16 hidden xl:block relative"> */
+}
+{
+  /* Add any additional content or components for the project cycle section here */
+}
+{
+  /* <div className="w-full absolute min-h-40 px-4 pt-10">
             <ImageWithFallback
               src="/images/path.png"
               width={1000}
@@ -54,9 +93,13 @@ export const HomeProjectCycle = () => {
               className="object-fill w-full h-full  min-h-40 "
             />
           </div>
-          <div className="grid grid-cols-4 gap-4">
-            {/* Grid 1 */}
-            <div className="flex gap- pt-36">
+          <div className="grid grid-cols-4 gap-4"> */
+}
+{
+  /* Grid 1 */
+}
+{
+  /* <div className="flex gap- pt-36">
               <User className="shrink-0 size-12 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
               <div className="flex gap-2">
                 <p className="text-9xl font-semibold text-violet-300">1</p>
@@ -67,10 +110,14 @@ export const HomeProjectCycle = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */
+}
 
-            {/* Grid 2 */}
-            <div className="flex gap-2">
+{
+  /* Grid 2 */
+}
+{
+  /* <div className="flex gap-2">
               <Package className="shrink-0 size-12 mt-2 z-10 text-primary cursor-pointer hover:scale-130 hover:-rotate-15  transition-all duration-300" />
               <div className="flex gap-2">
                 <p className="text-9xl font-semibold text-violet-300">2</p>
@@ -81,10 +128,14 @@ export const HomeProjectCycle = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */
+}
 
-            {/* Grid 3 */}
-            <div className="flex pt-36">
+{
+  /* Grid 3 */
+}
+{
+  /* <div className="flex pt-36">
               <Handshake className="shrink-0 size-12 -translate-y-4 cursor-pointer z-10 text-primary hover:scale-130 hover:-rotate-15 transition-all duration-300" />
               <div className="flex gap-2">
                 <p className="text-9xl font-semibold text-violet-300">3</p>
@@ -95,10 +146,14 @@ export const HomeProjectCycle = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */
+}
 
-            {/* Grid 4 */}
-            <div className="flex gap-2">
+{
+  /* Grid 4 */
+}
+{
+  /* <div className="flex gap-2">
               <div className="flex gap-2">
                 <p className="text-9xl font-semibold text-violet-300">4</p>
                 <div>
@@ -111,12 +166,20 @@ export const HomeProjectCycle = () => {
               <RefreshCcw className="shrink-0 size-12 text-primary mt-20 rounded-full cursor-pointer z-10 hover:scale-130 hover:-rotate-90 transition-all duration-300" />
             </div>
           </div>
-        </div>
+        </div> */
+}
 
-        {/* Mobile Only */}
-        <div className="mt-4 block space-y-10 xl:hidden">
-          {/* First Grid */}
-          <div className=" flex relative items-center gap-4">
+{
+  /* Mobile Only */
+}
+{
+  /* <div className="mt-4 block space-y-10 xl:hidden"> */
+}
+{
+  /* First Grid */
+}
+{
+  /* <div className=" flex relative items-center gap-4">
             <div>
               <div className="absolute w-full px-6 -z-10 pt-2">
                 <ImageWithFallback
@@ -147,10 +210,14 @@ export const HomeProjectCycle = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */
+}
 
-          {/* Second Grid */}
-          <div className=" flex relative items-center gap-4 mt-4">
+{
+  /* Second Grid */
+}
+{
+  /* <div className=" flex relative items-center gap-4 mt-4">
             <div>
               <div className="absolute w-full px-6 -z-10 pt-2">
                 <ImageWithFallback
@@ -181,10 +248,14 @@ export const HomeProjectCycle = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */
+}
 
-          {/* Third Grid */}
-          <div className=" flex relative items-center gap-4 mt-4">
+{
+  /* Third Grid */
+}
+{
+  /* <div className=" flex relative items-center gap-4 mt-4">
             <div>
               <div className="absolute w-full px-6 -z-10 pt-2">
                 <ImageWithFallback
@@ -215,10 +286,14 @@ export const HomeProjectCycle = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */
+}
 
-          {/* Fourth Grid */}
-          <div className=" flex relative items-center gap-4 mt-4">
+{
+  /* Fourth Grid */
+}
+{
+  /* <div className=" flex relative items-center gap-4 mt-4">
             <div className="z-10">
               <RefreshCcw className="size-14 bg-white text-primary rounded-full" />
             </div>
@@ -239,7 +314,5 @@ export const HomeProjectCycle = () => {
             </div>
           </div>
         </div>
-      </div>
-    </motion.section>
-  );
-};
+      </div> */
+}
