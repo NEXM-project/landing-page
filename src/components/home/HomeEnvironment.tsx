@@ -189,6 +189,45 @@ export const HomeEnvironment = () => {
             ))}
         </div>
       </motion.div>
+      {/* five horizontal image full rounded */}
+      {/* each and every image should be floaty */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 py-10"
+      >
+        <div className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 py-10">
+          {[
+            { src: "/images/bubbles/99.9.png", alt: "client1" },
+            { src: "/images/bubbles/roi.png", alt: "client2" },
+            { src: "/images/bubbles/dx.png", alt: "client3" },
+            { src: "/images/bubbles/team.png", alt: "client4" },
+            { src: "/images/bubbles/full.png", alt: "client5" },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              animate={{ y: [0, -6, 0] }}
+              transition={{
+                repeat: Infinity,
+                duration: 5 + (index % 3) * 0.5,
+                ease: "easeInOut",
+                delay: index * 0.3,
+              }}
+            >
+              <ImageWithFallback
+                src={item.src}
+                alt={item.alt}
+                loading="eager"
+                fallbackSrc={fallbackImage}
+                width={300}
+                height={150}
+                className="rounded-full object-cover w-20 h-20 lg:w-32 lg:h-32"
+              />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };
