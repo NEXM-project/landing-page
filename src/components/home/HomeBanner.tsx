@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import BlurText from "../BlurText";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
+import { fallbackImage } from "@/utils/secrets";
+import { fadeInUp } from "@/utils/transition";
 
 export const HomeBanner = () => {
   return (
@@ -69,7 +71,7 @@ export const HomeBanner = () => {
               </Link>
               <Link
                 href="#"
-                className="group relative inline-flex items-center gap-2 px-3 md:pl-6 md:pr-4 py-2 md:py-3 overflow-hidden bg-linear-to-b from-primary to-violet-900 rounded-full border border-primary text-white font-medium cursor-pointer"
+                className="group relative inline-flex items-center gap-2 px-3 md:pl-6 md:pr-4 py-2 md:py-3 overflow-hidden bg-linear-to-b from-primary to-violet-900 rounded-full border border-primary text-white font-medium cursor-pointer "
               >
                 <span className="relative z-10 transition-colors duration-600 group-hover:text-primary">
                   View Our Work
@@ -107,7 +109,43 @@ export const HomeBanner = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 py-10"
+      >
+        <div className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 py-10">
+          {[
+            { src: "/images/bubbles/based.png", alt: "client1" },
+            { src: "/images/bubbles/ai.png", alt: "client2" },
+            { src: "/images/bubbles/remote.png", alt: "client3" },
+            { src: "/images/bubbles/project.png", alt: "client4" },
+            { src: "/images/bubbles/ai2.png", alt: "client5" },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              animate={{ y: [0, -6, 0] }}
+              transition={{
+                repeat: Infinity,
+                duration: 5 + (index % 3) * 0.5,
+                ease: "easeInOut",
+                delay: index * 0.3,
+              }}
+            >
+              <ImageWithFallback
+                src={item.src}
+                alt={item.alt}
+                loading="eager"
+                fallbackSrc={fallbackImage}
+                width={300}
+                height={150}
+                className="object-contain w-30 h-30 lg:w-44 lg:h-48"
+              />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 };
