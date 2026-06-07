@@ -1,7 +1,7 @@
 "use client";
 import { fallbackImage } from "@/utils/secrets";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
-import { Zap } from "lucide-react";
+import { Zap, CheckCircle2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { CountUp } from "countup.js";
 import SplitText from "../SplitText";
@@ -60,7 +60,7 @@ export const HomeEnvironment = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 my-10 lg:my-30 min-h-screen flex flex-col justify-center gap-10 ">
+    <div className="max-w-7xl mx-auto px-4 my-10 lg:my-30 min-h-screen flex flex-col justify-center gap-6 ">
       {/* <SplitText
         text="The NEXMTECH Advantage"
         className="py-4 text-primary font-semibold text-base lg:text-lg"
@@ -74,33 +74,33 @@ export const HomeEnvironment = () => {
         rootMargin="-100px"
         textAlign="center"
       /> */}
+      <SplitText
+        text="Why Businesses Can Trust Us"
+        className="text-3xl md:text-2xl lg:text-5xl font-semibold leading-8 lg:leading-16"
+        delay={50}
+        duration={1.25}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+      />
 
       {/* Main Section */}
       <motion.div
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}
-        className="flex flex-col-reverse lg:flex-row gap-4 justify-between"
+        className="flex flex-col lg:flex-row gap-4 justify-between"
       >
         <div>
-          <SplitText
-            text="Engineered for Trust"
-            className="text-xl md:text-2xl lg:text-5xl max-w-lg font-semibold leading-8 lg:leading-16"
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-          />
-          <p className="max-w-lg font-sm lg:font-base text-justify mt-4">
-            We don't just write code; we build resilient systems. Our agency is
-            founded on the principles of precision, speed-to-market, and robust
-            internal tools for forward-thinking enterprises.
+          <p className="max-w-lg lg:text-lg text-justify mt-4">
+            We keep communication clear, delivery organized, and support
+            available after launch.
           </p>
+          {/*
           <div className="py-6 lg:py-10 space-y-6 lg:space-y-8 max-w-xl">
             <div className="flex gap-4 items-start ">
               <Zap className="bg-purple-300 min-h-12 min-w-12 text-primary rounded-md px-2" />
@@ -126,9 +126,29 @@ export const HomeEnvironment = () => {
                 </p>
               </div>
             </div>
+          </div> */}
+          <div className="py-6 lg:py-10 space-y-4 lg:space-y-6 max-w-xl">
+            {[
+              "Direct and professional",
+              "More website-friendly",
+              "Strong, Simple and client-focused",
+            ].map((point, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.15, duration: 0.5 }}
+                className="flex items-center gap-4 p-4 rounded-lg bg-linear-to-r from-purple-50 to-transparent hover:shadow-md transition-shadow duration-300 border border-purple-100"
+              >
+                <CheckCircle2 className="w-6 h-6 text-purple-600 shrink-0" />
+                <p className="text-lg lg:text-xl font-medium text-gray-800">
+                  {point}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
-        <div className="relative lg:pt-30">
+        <div className="relative max-w-2xl w-full h-full">
           <ImageWithFallback
             src="/images/home-enviroment.png"
             alt="home enviroment"
@@ -136,7 +156,7 @@ export const HomeEnvironment = () => {
             fallbackSrc={fallbackImage}
             width={1500}
             height={900}
-            className="rounded-md object-cover w-full lg:w-lg lg:max-h-80  h-full"
+            className="rounded-md object-cover w-full lg:w-2xl lg:max-h-100 h-full"
           />
         </div>
       </motion.div>

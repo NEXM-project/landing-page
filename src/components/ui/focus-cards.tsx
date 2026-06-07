@@ -36,7 +36,9 @@ export const Card = React.memo(
       <Image
         src={card.image}
         alt={card.name}
-        fill
+        height={1000}
+        width={1500}
+        loading="lazy"
         className={cn(
           "absolute inset-0 w-full h-full object-cover",
           card.imagePosition ?? "object-cover md:object-top",

@@ -45,8 +45,9 @@ const projectCard = (project: Project) => {
         <Image
           src={project.image}
           alt={project.name}
-          fill
-          className="object-cover"
+          height={1600}
+          width={1200}
+          className="object-cover w-full h-full"
         />
       </div>
     </div>

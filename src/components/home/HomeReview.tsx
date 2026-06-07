@@ -122,7 +122,7 @@ export const HomeReview = () => {
             alt="World"
             width={100}
             height={100}
-            className="absolute bottom-0 left-50 transform -translate-x-50 "
+            className="absolute bottom-0 left-50 h-25 w-25 transform -translate-x-50 "
           />
         </div>
       </div>

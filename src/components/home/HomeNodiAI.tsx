@@ -2,23 +2,38 @@ import Link from "next/link";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
 import { MoveRight } from "lucide-react";
 import BlurText from "../BlurText";
+import GradientText from "../GradientText";
 
 export const HomeNodiAI = () => {
   return (
     <section className="py-16">
       <BlurText
         text="Featuring Our AI Solution"
-        className="text-4xl md:text-5xl font-semibold mb-4 lg:mb-16 max-w-3xl mx-auto"
+        className="text-4xl md:text-5xl font-semibold mb-4 max-w-3xl mx-auto"
+        delay={100}
+        animateBy="words"
+        direction="top"
+      />
+      <BlurText
+        text={`An AI sales assistant that replies instantly, qualifies leads, manages customer messages, sends quotations, books meetings, and keeps your sales pipeline organized.`}
+        className="text-base md:text-xl mb-4 lg:mb-16 max-w-3xl mx-auto"
         delay={100}
         animateBy="words"
         direction="top"
       />
       <div className="relative xl:max-w-7xl flex justify-center mx-auto lg:px-4 min-h-96 h-540 lg:h-300 ">
-        <div className="bg-gray-600 absolute min-h-96 h-520 w-full lg:h-256  xl:max-w-5xl mx-auto lg:rounded-full"></div>
+        <div className="bg-gray-600 absolute min-h-96 h-550 w-full lg:h-256 xl:max-w-5xl mx-auto lg:rounded-full"></div>
         <div className="relative flex flex-col items-center gap-10 lg:gap-22">
           {/* Top Section */}
-          <div className="flex flex-col lg:flex-row gap-10 z-10 mt-4 lg:mt-0 px-4 lg:px-0">
-            <div>
+          <div className="flex flex-col lg:flex-row gap-10 z-10 mt-10 lg:mt-0 px-4 lg:px-0">
+            <div className="relative">
+              <ImageWithFallback
+                src="/images/nodi-ai-laptop.png"
+                height={1000}
+                width={1000}
+                alt="Nodi AI Laptop"
+                className="w-40 h-40 lg:w-96 lg:h-96 absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 "
+              />
               <ImageWithFallback
                 src="/images/feature-nodi-ai.svg"
                 height={1000}
@@ -29,8 +44,18 @@ export const HomeNodiAI = () => {
             </div>
             <div className=" flex gap-4 items-center max-w-lg">
               <div className="text-white space-y-4 max-w-sm">
-                <h2 className="text-2xl lg:text-6xl font-medium">Nodi AI</h2>
-                <p>Your AI agent handles leads. Your team closes the deals.</p>
+                <h2 className="text-2xl lg:text-7xl font-medium">Nodi AI</h2>
+                <GradientText
+                  colors={["#5227FF", "#FF9FFC", "#B497CF"]}
+                  animationSpeed={8}
+                  showBorder={false}
+                  className="text-lg lg:text-3xl font-medium"
+                >
+                  Never Miss a Lead Again.
+                </GradientText>
+                <p className="lg:text-lg text-gray-300">
+                  Your AI agent handles leads. Your team closes the deals. `
+                </p>
               </div>
               <Link
                 href="https://www.usenodi.com/"
