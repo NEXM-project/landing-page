@@ -14,7 +14,7 @@
     "image": "/images/projects/project2.webp"
   },
   {
-    "name": "Villa Website",
+    "name": "Luxury Villa Website",
     "date": "Nov 18, 2024",
     "description": "A complete landing page concept that blends lifestyle storytelling with clear user touchpoints — from luxury highlights to resident testimonials and quick FAQs. Designed to inspire trust and make decision-making effortless.",
     "tags": [],
@@ -35,10 +35,17 @@
     "image": "/images/projects/project5.webp"
   },
   {
-    "name": "Gym Web",
+    "name": "Fitness Website",
     "date": "Jan 15, 2026",
     "description": "We prioritized a sleek, modern design that's both visually striking and remarkably simple to use. We aimed to create an experience with bold imagery and clear calls to action, guiding visitors effortlessly through class schedules, membership details, trainer profiles, and more. ",
     "tags": [],
     "image": "/images/projects/project6.webp"
+  },
+  {
+    "name": "Arcon Interior",
+    "date": "Mar 10, 2025",
+    "description": "Interior Design · Website Design & Development · Result: Improved website traffic and inquiries.",
+    "tags": [],
+    "image": "/images/projects/project7.webp"
   }
 ]
