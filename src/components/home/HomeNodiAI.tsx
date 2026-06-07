@@ -61,8 +61,8 @@ export const HomeNodiAI = () => {
                 Unified Inbox Across Platforms
               </h3>
               <p className="text-black text-center max-w-sm">
-                Manage WhatsApp, Instagram, Facebook, Telegram, and email from
-                one inbox.
+                Manage Line, WhatsApp, Instagram, Facebook, Telegram, email, and
+                website inquiries from one place.
               </p>
             </div>
 
@@ -76,11 +76,12 @@ export const HomeNodiAI = () => {
                 className="w-72 h-72 object-cover rounded-full"
               />
               <h3 className="text-black text-xl lg:text-2xl font-medium text-center max-w-sm">
-                AI-Powered Lead Qualification & Auto Replies
+                AI Lead Qualification
               </h3>
               <p className="text-black text-center max-w-sm">
-                AI replies instantly, answers questions, and identifies
-                high-intent leads.
+                Nodi identifies high-intent leads and engages them with
+                professional, human-centered responses, empowering your team to
+                focus on closing deals.
               </p>
             </div>
 
@@ -97,7 +98,7 @@ export const HomeNodiAI = () => {
                 Sales Automation
               </h3>
               <p className="text-black text-center max-w-sm">
-                Automate meeting booking, follow-ups, quotations, and pipeline
+                Automate follow-ups, meeting booking, quotations, and pipeline
                 management.
               </p>
             </div>
