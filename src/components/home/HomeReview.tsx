@@ -4,6 +4,7 @@ import reviewData from "@/../public/db/reviews-db.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 interface Review {
   name: string;
@@ -70,11 +71,15 @@ const ReviewNavigation = ({ total }: { total: number }) => {
 export const HomeReview = () => {
   return (
     <section className="bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 ">
+      <div className="max-w-5xl mx-auto px-4 ">
         <Swiper className="!pb-28 md:!pb-24 select-none" grabCursor={true}>
           {reviewData.map((review: Review, index: number) => (
             <SwiperSlide key={index}>
-              <div className="my-8 md:my-16 lg:my-20 flex flex-col justify-center">
+              <div className="my-8 md:my-16 lg:my-20 flex flex-col justify-center gap-12">
+                {/* Header */}
+                <h2 className="text-4xl md:text-5xl font-semibold text-center mb-8">
+                  What Our Clients Say
+                </h2>
                 <div className="flex flex-col md:grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-center md:items-stretch">
                   <div className="flex items-center justify-center w-full md:w-auto">
                     <img
@@ -109,7 +114,17 @@ export const HomeReview = () => {
             </SwiperSlide>
           ))}
           <ReviewNavigation total={reviewData.length} />
+          {/* World image */}
         </Swiper>
+        <div className="relative inset-0 z-100 pointer-events-none">
+          <Image
+            src="/images/world.png"
+            alt="World"
+            width={100}
+            height={100}
+            className="absolute bottom-0 left-50 transform -translate-x-50 "
+          />
+        </div>
       </div>
     </section>
   );
