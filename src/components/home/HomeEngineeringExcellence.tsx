@@ -1,17 +1,12 @@
 "use client";
-import { fadeInLeft, fadeInUp } from "@/utils/transition";
+import { fadeInUp } from "@/utils/transition";
 import {
   Bot,
   Bug,
-  CheckLine,
   Cloud,
-  DiamondPlus,
   Logs,
-  MessageSquare,
-  Puzzle,
   RefreshCw,
   ShieldCheck,
-  Wrench,
   PenTool,
   Smartphone,
   Monitor,
@@ -19,6 +14,13 @@ import {
   Palette,
   Target,
   Megaphone,
+  Globe,
+  ShoppingCart,
+  FileText,
+  AppWindow,
+  Users,
+  Link,
+  CreditCard,
 } from "lucide-react";
 import { motion } from "motion/react";
 import SplitText from "../SplitText";
@@ -59,18 +61,18 @@ export const HomeEngineeringExcellence = () => {
             Comprehensive development services designed to scale your operations
             and integrate cutting-edge AI.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 lg:max-w-7xl lg:px-4 *:shadow-md gap-4 *:rounded-md *:p-4 *:lg:p-8 ">
-            <div className="lg:col-span-2 flex flex-col justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:max-w-7xl lg:px-4 *:shadow-md gap-4 *:rounded-md *:p-4 *:lg:p-8 ">
+            <div className="lg:col-span-1 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-2">
                   <Bot color="#6d28d9" size={32} className="-translate-y-0.5" />
                   <h3 className="text-lg md:text-xl lg:text-2xl">
-                    AI & SaaS Development
+                    Website Development
                   </h3>
                 </div>
                 <p className="my-4 mb-8 text-sm lg:text-base">
-                  Rapid prototyping and full-scale development for
-                  next-generation intelligent applications.
+                  Custom-built websites and applications tailored to your unique
+                  business needs.
                 </p>
               </div>
               <motion.div
@@ -80,101 +82,118 @@ export const HomeEngineeringExcellence = () => {
                 className="grid lg:grid-cols-2 grid-cols-1 *:h-20 *:rounded-md gap-4 *:p-4"
               >
                 <div className="bg-gray-100 flex items-center gap-3">
-                  <MessageSquare color="#6d28d9" />
+                  <Globe color="#6d28d9" />
                   <div>
                     <h4 className="text-sm lg:text-base  font-medium">
-                      AI MVPs
+                      Landing Pages
                     </h4>
                     <p className="text-xs lg:text-sm text-muted-foreground">
-                      Chatbot & RAG Systems
+                      High-conversion designs
                     </p>
                   </div>
                 </div>
                 <div className="bg-gray-100 flex items-center gap-3">
-                  <Cloud color="#6d28d9" />
+                  <ShoppingCart color="#6d28d9" />
                   <div>
                     <h4 className="text-sm lg:text-base font-medium">
-                      SaaS MVPs
+                      E-commerce
                     </h4>
                     <p className="text-xs lg:text-sm  text-muted-foreground">
-                      Scalable Cloud Platforms
+                      Online stores & payments
                     </p>
                   </div>
                 </div>
                 <div className="bg-gray-100 flex items-center gap-3">
-                  <DiamondPlus color="#6d28d9" />
+                  <FileText color="#6d28d9" />
                   <div>
                     <h4 className="text-sm lg:text-base  font-medium">
-                      API Development
+                      CMS Integration
                     </h4>
-                    <p className="text-xs lg:text-sm text-muted-foreground">
-                      Robust Data Pipelines
+                    <p className="text-xs lg:text-[13px]  text-muted-foreground">
+                      Easy content management
                     </p>
                   </div>
                 </div>
                 <div className="bg-gray-100 flex items-center gap-3">
-                  <Puzzle color="#6d28d9" />
+                  <AppWindow color="#6d28d9" />
                   <div>
                     <h4 className="text-sm lg:text-base font-medium">
-                      Feature Development
+                      Web Applications
                     </h4>
                     <p className="text-xs lg:text-sm  text-muted-foreground">
-                      Agile Enhancements
+                      Interactive experiences
                     </p>
                   </div>
                 </div>
               </motion.div>
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <Wrench color="#6d28d9" size={32} className="rotate-90" />
-                <h3 className="text-lg md:text-xl lg:text-2xl">
-                  Operations & Tools
-                </h3>
+
+            <div className="lg:col-span-1 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-2">
+                  <Bot color="#6d28d9" size={32} className="-translate-y-0.5" />
+                  <h3 className="text-lg md:text-xl lg:text-2xl">
+                    SaaS Development
+                  </h3>
+                </div>
+                <p className="my-4 mb-8 text-sm lg:text-base">
+                  Building scalable, secure, and user-friendly SaaS platforms
+                  that drive business growth.
+                </p>
               </div>
-              <p className="my-4 mb-8 text-sm lg:text-base">
-                Streamline your workflows with custom internal software and
-                automated processes.
-              </p>
-              <div className="grid grid-cols-1 gap-2 *:border-b-[0.5px] space-y-1 *:border-gray-300 *:text-xs *:lg:text-sm *:pb-2">
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={fadeInLeft}
-                  className="flex items-center gap-2"
-                >
-                  <CheckLine color="#6d28d9" />
-                  <p>Internal Tools</p>
-                </motion.div>
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={fadeInLeft}
-                  className="flex items-center gap-2"
-                >
-                  <CheckLine color="#6d28d9" />
-                  <p>Dashboard Development</p>
-                </motion.div>
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={fadeInLeft}
-                  className="flex items-center gap-2"
-                >
-                  <CheckLine color="#6d28d9" />
-                  <p>Workflow Automation</p>
-                </motion.div>
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={fadeInLeft}
-                  className="flex items-center gap-2"
-                >
-                  <CheckLine color="#6d28d9" />
-                  <p>Shopify Custom Dev & CMS</p>
-                </motion.div>
-              </div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                className="grid lg:grid-cols-2 grid-cols-1 *:h-20 *:rounded-md gap-4 *:p-4"
+              >
+                <div className="bg-gray-100 flex items-center gap-3">
+                  <Cloud color="#6d28d9" />
+                  <div>
+                    <h4 className="text-sm lg:text-base  font-medium">
+                      Cloud Architecture
+                    </h4>
+                    <p className="text-xs lg:text-sm text-muted-foreground">
+                      Scalable infrastructure
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-gray-100 flex items-center gap-3">
+                  <Link color="#6d28d9" />
+                  <div>
+                    <h4 className="text-sm lg:text-base font-medium">
+                      API Integration
+                    </h4>
+                    <p className="text-xs lg:text-sm  text-muted-foreground">
+                      Seamless data flow
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-gray-100 flex items-center gap-3">
+                  <Users color="#6d28d9" />
+                  <div>
+                    <h4 className="text-sm lg:text-base  font-medium">
+                      Multi-tenant Systems
+                    </h4>
+                    <p className="text-xs lg:text-sm text-muted-foreground">
+                      Secure user isolation
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-gray-100 flex items-center gap-3">
+                  <CreditCard color="#6d28d9" />
+                  <div>
+                    <h4 className="text-sm lg:text-base font-medium">
+                      Subscription Models
+                    </h4>
+                    <p className="text-xs lg:text-sm  text-muted-foreground">
+                      Automated billing
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
+
             <div className="lg:col-span-3 flex lg:flex-row flex-col gap-4 justify-between">
               <div className="lg:max-w-96">
                 <div className="flex items-center gap-2">
