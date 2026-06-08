@@ -46,7 +46,7 @@
         {
           "id": 3,
           "name": "Mahedi Hassan Rafin",
-          "designation": "Back-End Developer",
+          "designation": "Global Operations Head",
           "address": "Dhaka, Bangladesh",
           "description": "Relentless back-end Developer experienced in developing scalable, high-performance web applications using Python technologies.",
           "imageFile": "rafin"
@@ -54,7 +54,7 @@
         {
           "id": 4,
           "name": "Tanvir Hasan Serazy",
-          "designation": "Front-End Developer",
+          "designation": "Technical Operations Manager",
           "address": "Dhaka, Bangladesh",
           "description": "Relentless front-end Developer experienced in designing responsive, scalable, real-time web applications using JavaScript technologies passionate about user-centered design and performance optimization.",
           "imageFile": "serazy",

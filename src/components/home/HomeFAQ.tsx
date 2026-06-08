@@ -19,6 +19,9 @@ export function HomeFAQ() {
     { q: "q3", a: "a3" },
     { q: "q4", a: "a4" },
     { q: "q5", a: "a5" },
+    { q: "q6", a: "a6" },
+    { q: "q7", a: "a7" },
+    { q: "q8", a: "a8" },
   ];
 
   return (

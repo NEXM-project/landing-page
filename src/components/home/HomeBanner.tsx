@@ -21,7 +21,7 @@ export const HomeBanner = () => {
           )}
         />
         <div className="absolute z-10 bg-linear-to-t lg:bg-linear-to-bottom from-white to-transparent w-full h-full lg:h-[150%]"></div>
-        <div className="xl:max-w-7xl w-full relative flex flex-col-reverse lg:flex-row gap-4 lg:gap-8 mx-auto px-4 xl:px-0 min-h-[60vh] z-20 mt-10 lg:mt-36 mb-10 lg:mb-20 ">
+        <div className="xl:max-w-7xl w-full relative flex flex-col-reverse lg:flex-row gap-4 lg:gap-8 mx-auto px-4 xl:px-0 min-h-[60vh] z-20 mt-20 lg:mt-36 mb-10 lg:mb-20 ">
           <div className="w-full lg:w-1/2 flex flex-col justify-center relative z-10">
             <div className="flex flex-col items-left justify-center w-full">
               <BlurText
@@ -46,12 +46,12 @@ export const HomeBanner = () => {
 
             <div className="max-w-2xl mx-auto ">
               <BlurText
-                text={`We help Japanese businesses build websites, software, internal systems, and AI-powered sales automation through a reliable remote engineering team based in Japan and globally`}
+                text={`We help businesses build websites, software, internal systems, and AI-powered sales automation through a reliable remote engineering team based in Japan and globally.`}
                 className="mt-6 lg:mt-8 md:text-xl lg:text-xl"
                 delay={10}
                 animateBy="words"
                 direction="top"
-                justify="justify-between md:justify-center"
+                justify="justify-center"
               />
             </div>
 
@@ -86,7 +86,7 @@ export const HomeBanner = () => {
           </div>
           <div className="relative w-full lg:w-1/2 flex items-center justify-center">
             {/* gradient blob, behind */}
-            <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[1000px] w-80 lg:h-[1000px] h-80 rounded-full bg-[radial-gradient(circle,_white_0%,_transparent_100%)] pointer-events-none" />
+            <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-250 w-80 lg:h-250 h-80 rounded-full bg-[radial-gradient(circle,_white_0%,_transparent_100%)] pointer-events-none" />
 
             {/* video on top */}
             <video

@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { fadeInUp } from "@/utils/transition";
 import { LogoLoop } from "../LogoLoop";
@@ -83,6 +84,18 @@ const imageLogos2 = [
 ];
 
 export const FeaturedProjects = () => {
+  const [logoHeight, setLogoHeight] = useState(80);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLogoHeight(window.innerWidth >= 1024 ? 80 : 40);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <motion.div
@@ -118,7 +131,7 @@ export const FeaturedProjects = () => {
             logos={imageLogos1}
             speed={80}
             direction="left"
-            logoHeight={80}
+            logoHeight={logoHeight}
             gap={60}
             hoverSpeed={0}
             scaleOnHover
@@ -130,7 +143,7 @@ export const FeaturedProjects = () => {
             logos={imageLogos2}
             speed={80}
             direction="right"
-            logoHeight={80}
+            logoHeight={logoHeight}
             gap={60}
             hoverSpeed={0}
             scaleOnHover

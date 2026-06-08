@@ -41,7 +41,7 @@ const projectCard = (project: Project) => {
         </div>
         {/* <div className="bg-black/50 w-full h-full absolute inset-0 z-5"></div> */}
         {/* <div className="absolute inset-0 z-6 bg-linear-to-t from-black to-transparent pointer-events-none"></div> */}
-        <div className="absolute inset-0 z-6 pointer-events-none bg-black/90 lg:bg-transparent lg:bg-linear-to-t lg:from-black lg:to-transparent"></div>
+        <div className="absolute inset-0 z-6 pointer-events-none bg-black/80 lg:bg-transparent lg:bg-linear-to-t lg:from-black lg:to-transparent"></div>
         <Image
           src={project.image}
           alt={project.name}
@@ -58,9 +58,13 @@ export const HomeProjects = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-20">
       <div>
-        <h2 className="text-5xl font-semibold text-center mb-8">
+        <h2 className="text-4xl lg:text-5xl font-semibold text-center mb-4">
           Affiliated Projects
         </h2>
+        <p className="text-center text-sm lg:text-lg mb-8">
+          A selection of websites, apps, dashboards, and digital products built
+          by our team and partner network.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projectData.map((project: Project, index: number) => (
             <div key={index}>{projectCard(project)}</div>

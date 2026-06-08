@@ -34,14 +34,14 @@ export const HomeEngineeringExcellence = () => {
       variants={fadeInUp}
     >
       <h2 className="py-4 text-primary font-semibold text-center lg:text-lg">
-        The NEXMTECH ADVANTAGE
+        The NEXM ADVANTAGE
       </h2>
       {/* Main Section */}
       <div className="flex justify-center w-full">
         <div>
           <div className="text-center">
             <SplitText
-              text="Engineering Excellence"
+              text="What We Build"
               className="text-xl md:text-2xl lg:text-5xl font-semibold leading-8 lg:leading-16 text-center"
               delay={10}
               duration={1.25}

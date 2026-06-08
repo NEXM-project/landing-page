@@ -38,7 +38,7 @@ export const Footer = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
           <div className="flex flex-col gap-6 sm:col-span-2">
             <div className="flex flex-col gap-4">
-              <h3 className="text-4xl font-semibold">NexmTech</h3>
+              <h3 className="text-4xl font-semibold">Nexm</h3>
               <p className="text-lg text-left xl:text-justify text-muted-foreground">
                 NexM is a Japan-based digital solutions company helping
                 businesses build websites, software, AI automation, and reliable
@@ -98,8 +98,8 @@ export const Footer = () => {
             <h4 className="text-2xl font-semibold">Contact</h4>
             <div className="flex flex-col gap-2 text-muted-foreground">
               <p className="text-lg">Tokyo, Japan</p>
-              <p className="text-lg">enquiry@nexmtech.com</p>
               <p className="text-lg">Online Consultation Available</p>
+              <p className="text-lg">enquiry@nexmtech.com</p>
             </div>
           </div>
 
