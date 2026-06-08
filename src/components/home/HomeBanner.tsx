@@ -84,28 +84,18 @@ export const HomeBanner = () => {
               </Link>
             </div>
           </div>
-          <div className="relative mt-20 lg:mt-36 w-full lg:w-1/2 flex items-center justify-center h-60 z-10">
-            {/* Video container */}
-            <div
-              className="overflow-hidden rounded-full absolute inset-0 w-60 lg:w-180 flex items-center justify-center h-60 lg:h-99"
-              style={{
-                background:
-                  "radial-gradient(circle, white 40%, transparent 70%)",
-              }}
+          <div className="relative w-full lg:w-1/2 flex items-center justify-center">
+            {/* gradient blob, behind */}
+            <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[1000px] w-80 lg:h-[1000px] h-80 rounded-full bg-[radial-gradient(circle,_white_0%,_transparent_100%)] pointer-events-none" />
+
+            {/* video on top */}
+            <video
+              autoPlay
+              muted
+              className="relative z-10 w-50 lg:w-100 h-50 lg:h-80 object-cover [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
             >
-              <div className="h-full w-full lg:h-99 lg:w-120 flex items-center justify-center">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  className="w-60 lg:w-120 h-60 lg:h-100 object-cover"
-                  style={{ background: "white" }}
-                >
-                  <source src="videos/orbit.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
+              <source src="videos/orbit.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
