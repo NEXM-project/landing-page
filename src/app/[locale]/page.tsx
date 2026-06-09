@@ -24,7 +24,7 @@ export default function Home() {
       <HomeEngineeringExcellence />
       <HomeProjects />
       <FeaturedProjects />
-      <HomeProjectCycle />
+      {/* <HomeProjectCycle /> */}
       <HomeReview />
       <HomeFAQ />
       <HomeContactUs />

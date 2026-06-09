@@ -25,17 +25,17 @@ export const HomeNodiAI = () => {
         <div className="bg-gray-600 absolute min-h-96 h-550 w-full lg:h-256 xl:max-w-5xl mx-auto lg:rounded-full"></div>
         <div className="relative flex flex-col items-center gap-10 lg:gap-22">
           {/* Top Section */}
-          <div className="flex flex-col lg:flex-row gap-10 z-10 mt-10 lg:mt-0 px-4 lg:px-0">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 z-10 mt-10 lg:mt-0 px-4 lg:px-0">
             <div className="relative">
               <ImageWithFallback
-                src="/images/nodi-ai-laptop.png"
+                src="/images/nodi-ai/nodi-ai-laptop.png"
                 height={1000}
                 width={1000}
                 alt="Nodi AI Laptop"
                 className="w-40 h-40 lg:w-96 lg:h-96 absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 "
               />
               <ImageWithFallback
-                src="/images/feature-nodi-ai.svg"
+                src="/images/nodi-ai/feature-nodi-ai.svg"
                 height={1000}
                 width={1000}
                 alt="Nodi AI Logo"
@@ -76,16 +76,16 @@ export const HomeNodiAI = () => {
             {/* Feature 1 */}
             <div className="flex flex-col gap-4 lg:gap-8 items-center lg:mt-28 hover:scale-110 duration-300 cursor-pointer">
               <ImageWithFallback
-                src="/images/placeholder-image.png"
+                src="/images/nodi-ai/img1.svg"
                 width={1000}
                 height={1000}
                 alt="feature 1"
-                className="w-72 h-72 object-cover rounded-full"
+                className="w-96 h-72 object-contain rounded-md"
               />
-              <h3 className="text-black text-xl lg:text-2xl font-medium text-center">
+              <h3 className="text-white lg:text-black text-xl lg:text-2xl font-medium text-center">
                 Unified Inbox Across Platforms
               </h3>
-              <p className="text-black text-center max-w-sm">
+              <p className="text-white lg:text-black text-center max-w-sm">
                 Manage Line, WhatsApp, Instagram, Facebook, Telegram, email, and
                 website inquiries from one place.
               </p>
@@ -94,16 +94,16 @@ export const HomeNodiAI = () => {
             {/* Feature 2 */}
             <div className="flex flex-col gap-4 lg:gap-8 items-center hover:scale-110 duration-300">
               <ImageWithFallback
-                src="/images/placeholder-image.png"
+                src="/images/nodi-ai/img2.svg"
                 width={1000}
                 height={1000}
                 alt="feature 2"
-                className="w-72 h-72 object-cover rounded-full"
+                className=" w-96 h-72 object-contain rounded-md"
               />
-              <h3 className="text-black text-xl lg:text-2xl font-medium text-center max-w-sm">
+              <h3 className="text-white lg:text-black text-xl lg:text-2xl font-medium text-center max-w-sm">
                 AI Lead Qualification
               </h3>
-              <p className="text-black text-center max-w-sm">
+              <p className="text-white lg:text-black text-center max-w-sm">
                 Nodi identifies high-intent leads and engages them with
                 professional, human-centered responses, empowering your team to
                 focus on closing deals.
@@ -113,16 +113,16 @@ export const HomeNodiAI = () => {
             {/* Feature 3 */}
             <div className="flex flex-col gap-4 lg:gap-8 items-center lg:mt-28 hover:scale-110 duration-300">
               <ImageWithFallback
-                src="/images/placeholder-image.png"
+                src="/images/nodi-ai/img3.svg"
                 width={1000}
                 height={1000}
                 alt="feature 3"
-                className="w-72 h-72 object-cover rounded-full"
+                className="w-96 h-72 object-contain rounded-md"
               />
-              <h3 className="text-black text-xl lg:text-2xl font-medium text-center max-w-sm">
+              <h3 className="text-white lg:text-black text-xl lg:text-2xl font-medium text-center max-w-sm">
                 Sales Automation
               </h3>
-              <p className="text-black text-center max-w-sm">
+              <p className="text-white lg:text-black text-center max-w-sm">
                 Automate follow-ups, meeting booking, quotations, and pipeline
                 management.
               </p>

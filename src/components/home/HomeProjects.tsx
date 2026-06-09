@@ -1,6 +1,11 @@
+"use client";
 import projectData from "@/../public/db/projects-db.json";
 import { Clock4 } from "lucide-react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 interface Project {
   name: string;
@@ -56,21 +61,50 @@ const projectCard = (project: Project) => {
 
 export const HomeProjects = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-20">
-      <div>
-        <h2 className="text-4xl lg:text-5xl font-semibold text-center mb-4">
-          Affiliated Projects
-        </h2>
-        <p className="text-center text-sm lg:text-lg mb-8">
-          A selection of websites, apps, dashboards, and digital products built
-          by our team and partner network.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {projectData.map((project: Project, index: number) => (
-            <div key={index}>{projectCard(project)}</div>
-          ))}
+    <>
+      <style>{`
+        .swiper-pagination-bullet {
+          background-color: #d1d5db !important;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: var(--color-primary, #3b82f6) !important;
+        }
+      `}</style>
+      <section className="max-w-7xl mx-auto px-4 py-20">
+        <div>
+          <h2 className="text-4xl lg:text-5xl font-semibold text-center mb-4">
+            Affiliated Projects
+          </h2>
+          <p className="text-center text-sm lg:text-lg mb-8">
+            A selection of websites, apps, dashboards, and digital products
+            built by our team and partner network.
+          </p>
+          {/* Mobile and Tablet Slider */}
+          <div className="lg:hidden mb-8">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
+              spaceBetween={16}
+              breakpoints={{
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+              }}
+              className="py-8"
+            >
+              {projectData.map((project: Project, index: number) => (
+                <SwiperSlide key={index}>{projectCard(project)}</SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          {/* Desktop Grid */}
+          <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            {projectData.map((project: Project, index: number) => (
+              <div key={index}>{projectCard(project)}</div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };

@@ -11,7 +11,7 @@ import { fadeInUp } from "@/utils/transition";
 export const HomeBanner = () => {
   return (
     <section>
-      <div className="relative min-h-screen flex h-full w-full lg:h-200 items-center justify-center bg-white dark:bg-black overflow-hidden">
+      <div className="relative my-12 flex h-full w-full lg:h-200 items-center justify-center bg-white dark:bg-black overflow-hidden">
         <div
           className={cn(
             "absolute inset-0",
@@ -84,7 +84,7 @@ export const HomeBanner = () => {
               </Link>
             </div>
           </div>
-          <div className="relative w-full lg:w-1/2 flex items-center justify-center">
+          <div className="relative w-full lg:w-1/2 hidden lg:flex items-center justify-center">
             {/* gradient blob, behind */}
             <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-250 w-80 lg:h-250 h-80 rounded-full bg-[radial-gradient(circle,_white_0%,_transparent_100%)] pointer-events-none" />
 
@@ -103,9 +103,9 @@ export const HomeBanner = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}
-        className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 py-10"
+        className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16"
       >
-        <div className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 py-10">
+        <div className="flex flex-row justify-center flex-wrap gap-8 lg:gap-16 pb-10">
           {[
             { src: "/images/bubbles/based.png", alt: "client1" },
             { src: "/images/bubbles/ai.png", alt: "client2" },
