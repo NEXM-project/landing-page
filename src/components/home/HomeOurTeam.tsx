@@ -24,7 +24,7 @@ export const HomeOurTeam = () => {
     >
       <div>
         <div className="flex flex-col items-center justify-center">
-          <SplitText
+          {/* <SplitText
             text={t("heading")}
             className="text-base md:text-lg text-primary lg:text-xl font-semibold text-center"
             delay={10}
@@ -36,7 +36,7 @@ export const HomeOurTeam = () => {
             threshold={0.1}
             rootMargin="-100px"
             textAlign="center"
-          />
+          /> */}
           <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mt-4">
             {t("title")}
           </h3>

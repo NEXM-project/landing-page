@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { ImageWithFallback } from "../common/ImageWIthFallback";
 
 const companyLinks = [
   { href: "#", label: "About" },
@@ -25,7 +26,7 @@ const legalLinks = [
 const LinkItem = ({ href, label }: { href: string; label: string }) => (
   <Link
     href={href}
-    className="text-lg py-1 font-medium transition-all duration-300 cursor-pointer border-b-2 hover:text-primary border-b-transparent hover:border-b-primary w-fit text-muted-foreground hover:text-white"
+    className="text-lg py-1 font-medium transition-all duration-300 cursor-pointer border-b-2 border-b-transparent hover:border-b-primary w-fit text-muted-foreground hover:text-white"
   >
     {label}
   </Link>
@@ -38,7 +39,16 @@ export const Footer = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
           <div className="flex flex-col gap-6 sm:col-span-2">
             <div className="flex flex-col gap-4">
-              <h3 className="text-4xl font-semibold">Nexm</h3>
+              {/* <h3 className="text-4xl font-semibold">Nexm</h3> */}
+
+              <ImageWithFallback
+                src="/images/nexm-logo.png"
+                width={1000}
+                height={700}
+                loading="eager"
+                alt="icon"
+                className="w-32 h-16 object-cover rounded-md"
+              />
               <p className="text-lg text-left xl:text-justify text-muted-foreground">
                 NexM is a Japan-based digital solutions company helping
                 businesses build websites, software, AI automation, and reliable
@@ -117,7 +127,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-[73px] py-4 bg-[#2E1A47] flex items-center justify-center px-4 text-center">
+      <div className="min-h-18.25 py-4 bg-[#2E1A47] flex items-center justify-center px-4 text-center">
         <p className="text-muted-foreground">
           &copy; {new Date().getFullYear()} NexmTech. All rights reserved.
         </p>

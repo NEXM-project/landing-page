@@ -33,9 +33,9 @@ export const HomeEngineeringExcellence = () => {
       whileInView="visible"
       variants={fadeInUp}
     >
-      <h2 className="py-4 text-primary font-semibold text-center lg:text-lg">
+      {/* <h2 className="py-4 text-primary font-semibold text-center lg:text-lg">
         The NEXM ADVANTAGE
-      </h2>
+      </h2> */}
       {/* Main Section */}
       <div className="flex justify-center w-full">
         <div>

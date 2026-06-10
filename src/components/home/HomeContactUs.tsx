@@ -40,11 +40,12 @@ export const HomeContactUs = () => {
           <div className="w-full xl:w-fit xl:min-w-100  py-10">
             <div className="bg-primary/10 rounded-md p-5 ">
               <ImageWithFallback
-                src="/images/contact-us-icon.png"
-                width="100"
-                height="100"
+                src="/images/nexm-logo.png"
+                width={1000}
+                height={700}
                 loading="eager"
                 alt="icon"
+                className="w-32 h-16 object-cover mb-4 rounded-md"
               />
               <p className="pb-2 lg:text-lg">+818095339061</p>
               <p className="pb-2 lg:text-lg">enquiry@nexmtech.com</p>
