@@ -1,17 +1,17 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, Code2, Cpu, Globe, Sparkles } from "lucide-react";
+import { fallbackImage } from "@/utils/secrets";
+import { fadeInUp } from "@/utils/transition";
+import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import BlurText from "../BlurText";
 import { ImageWithFallback } from "../common/ImageWIthFallback";
-import { fallbackImage } from "@/utils/secrets";
-import { fadeInUp } from "@/utils/transition";
 
 export const HomeBanner = () => {
   return (
     <section>
-      <div className="relative my-12 flex h-full w-full lg:h-200 items-center justify-center bg-white dark:bg-black overflow-hidden">
+      <div className="relative flex h-full w-full lg:h-200 items-center justify-center bg-white dark:bg-black overflow-hidden">
         <div
           className={cn(
             "absolute inset-0",
@@ -21,7 +21,7 @@ export const HomeBanner = () => {
           )}
         />
         <div className="absolute z-10 bg-linear-to-t lg:bg-linear-to-bottom from-white to-transparent w-full h-full lg:h-[150%]"></div>
-        <div className="xl:max-w-7xl w-full relative flex flex-col-reverse lg:flex-row gap-4 lg:gap-8 mx-auto px-4 xl:px-0 min-h-[60vh] z-20 mt-20 lg:mt-36 mb-10 lg:mb-20 ">
+        <div className="xl:max-w-7xl w-full relative flex flex-col-reverse lg:flex-row gap-4 lg:gap-8 mx-auto px-4 xl:px-0 min-h-[60vh] z-20 mt-20 lg:mt-28 mb-10 lg:mb-10 ">
           <div className="w-full lg:w-1/2 flex flex-col justify-center relative z-10">
             <div className="flex flex-col items-left justify-center w-full">
               <BlurText
